@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+
+.services {
+  padding: 8rem 0 1rem 0;
+
+  .heading {
+    .carousel {
+      border-bottom: 4px solid $yellow;
+      border-top: 4px solid $yellow;
+      padding: 1rem 0;
+      .service {
+        .name {
+          text-align: center;
+          font-size: 3rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-family: $Ibarra_Real_Nova;
+          color: $brown;
+          white-space: nowrap;
+          padding-right: 3rem;
+          @include breakpoint(sm) {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+  .serviceList {
+    margin-top: 4rem;
+    color: $brown;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 4rem;
+    flex-wrap: wrap;
+    .service {
+      width: 20rem;
+      @include breakpoint(sm) {
+        width: 17rem;
+      }
+
+      img {
+        width: 20rem;
+        @include breakpoint(sm) {
+          width: 17rem;
+          height: 17rem !important;
+          object-fit: cover;
+        }
+      }
+      .name {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: $Josefin_Sans;
+        line-height: 2rem;
+        padding-top: 1.5rem;
+      }
+      .description {
+        font-size: 1rem;
+        font-weight: 100;
+        font-family: $Josefin_Sans;
+        line-height: 2rem;
+      }
+      &:nth-child(2),
+      &:nth-child(4) {
+        img {
+          height: 20rem;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

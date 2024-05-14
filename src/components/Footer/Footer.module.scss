@@ -1,0 +1,68 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background-color: $brown;
+  color: $bg;
+  padding: 0 2rem;
+  text-align: center;
+  .heading {
+    text-align: center;
+    padding-top: 3rem;
+    margin: 0 auto 3rem auto;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    @include breakpoint(lg) {
+      font-size: 2rem;
+    }
+    @include breakpoint(sm) {
+      font-size: 2.5rem;
+    }
+  }
+  .social_media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    @include breakpoint(lg) {
+      font-size: 1rem;
+      gap: 3rem;
+    }
+    @include breakpoint(sm) {
+      display: block;
+      font-size: 1.5rem;
+      line-height: 4rem;
+    }
+
+    .name {
+      font-weight: 100;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      @include breakpoint(lg) {
+        gap: 1rem;
+      }
+      a {
+        padding: 1.5rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: $bg;
+        font-size: 2.5rem;
+        @include breakpoint(lg) {
+          font-size: 1.5rem;
+        }
+
+        svg {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

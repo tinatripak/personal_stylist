@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+$Josefin_Sans: "Josefin Sans", sans-serif;
+$Ibarra_Real_Nova: "Ibarra Real Nova", serif;
+
+$bg: rgb(231, 230, 226);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$dark: rgb(29, 29, 29);
+$terracotta: rgb(153, 93, 72);
+$brown: rgb(102 82 59);
+$light_brown: rgb(178 176 163);
+$yellow: rgb(200 148 61);
+$primary: rgb(162, 162, 246);
+
+$screenHeight: 100vh;
+$headerHeight: 100px;
+
+@mixin breakpoint($point) {
+  @if $point == burger {
+    @media (min-width: 1290px) {
+      @content;
+    }
+  }
+  @if $point == lg {
+    @media (max-width: 61em) {
+      @content;
+    }
+  }
+  @if $point == md {
+    @media (max-width: 47em) {
+      @content;
+    }
+  }
+  @if $point == sm {
+    @media (max-width: 36em) {
+      @content;
+    }
+  }
+  @if $point == xs {
+    @media (max-width: 30em) {
+      @content;
+    }
+  }
+}
