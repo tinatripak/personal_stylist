@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Layout from '../../components/Layout/Layout'
 import Loader from '../../components/Loader/Loader'
 import styles from './Home.module.scss'
+import Typewriter from 'typewriter-effect'
+import { ReactTyped } from 'react-typed'
 
 const Home: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState(false)
@@ -18,8 +20,16 @@ const Home: React.FC = () => {
             <div className={styles.main}>
               <p className={styles.heading}>Personal Stylist</p>
               <p className={styles.subheading}>
-                Let your look speak for you. Individual style for the unique
-                you!
+                <Typewriter
+                  options={{
+                    strings: [
+                      'Let your look speak for you. Individual style for the unique you!',
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 0,
+                  }}
+                />
               </p>
               <a className={styles.service_button} href="/services">
                 My Services
@@ -33,7 +43,7 @@ const Home: React.FC = () => {
               />
             </div>
           </div>
-          <div className={styles.second_block} id="about">
+          <div className={styles.second_block}>
             <div className={styles.second_image}>
               <img src="/stylist_2.jpg" alt="Liza Balizka" />
             </div>
@@ -43,7 +53,15 @@ const Home: React.FC = () => {
                 I am a <span>personal stylist Liza</span> and I want to help you
                 find and express you unique style.
               </p>
-              <p className={styles.mission_heading}>My mission</p>
+              <p className={styles.mission_heading}>
+                <ReactTyped
+                  strings={['My mission', 'My desire', 'My purpose']}
+                  typeSpeed={100}
+                  loop
+                  backSpeed={20}
+                  showCursor={true}
+                />
+              </p>
               <p className={styles.mission}>
                 It is to make you happier by expressing your inner world through
                 your appearance, especially though your choice of style in
