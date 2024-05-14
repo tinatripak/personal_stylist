@@ -25,9 +25,9 @@ const Reviews: React.FC = () => {
         </ScrollCarousel>
         <div className={styles.quote}>
           <q>
-            Don't be into trends. Don't make fashion own you, but you decide
-            what you are, what you want to express by the way you dress and the
-            way to live.
+            Don&apos;t be into trends. Don&apos;t make fashion own you, but you
+            decide what you are, what you want to express by the way you dress
+            and the way to live.
           </q>
           <br />
           —Gianni Versace
