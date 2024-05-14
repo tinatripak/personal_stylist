@@ -1,8 +1,8 @@
-import React from "react";
-import { FaInstagram, FaTelegramPlane } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
+import React from 'react'
+import { FaInstagram, FaTelegramPlane } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 
-import styles from "./Footer.module.scss";
+import styles from './Footer.module.scss'
 
 const Footer: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
         <p className={styles.name}>Liza Balizka</p>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,53 +1,53 @@
-import React, { useEffect, useState } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
-import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from 'react'
+import { BiMenuAltRight } from 'react-icons/bi'
+import { AiOutlineClose } from 'react-icons/ai'
+import { Link, useLocation } from 'react-router-dom'
 
-import classes from "./Header.module.scss";
+import classes from './Header.module.scss'
 
 interface Size {
-  width: number | undefined;
-  height: number | undefined;
+  width: number | undefined
+  height: number | undefined
 }
 
 const Header: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false)
   const [size, setSize] = useState<Size>({
     width: undefined,
     height: undefined,
-  });
-  const location = useLocation();
+  })
+  const location = useLocation()
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       setSize({
         width: window.innerWidth,
         height: window.innerHeight,
-      });
+      })
     }
 
     const handleResize = () => {
       setSize({
         width: window.innerWidth,
         height: window.innerHeight,
-      });
-    };
-    window.addEventListener("resize", handleResize);
+      })
+    }
+    window.addEventListener('resize', handleResize)
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     if (size.width !== undefined) {
       if (size.width > 1290) {
-        setMenuOpen(false);
+        setMenuOpen(false)
       }
     }
-  }, [size.width]);
+  }, [size.width])
 
   const menuToggleHandler = () => {
-    setMenuOpen((prevState) => !prevState);
-  };
+    setMenuOpen((prevState) => !prevState)
+  }
 
   return (
     <header className={classes.header}>
@@ -56,9 +56,9 @@ const Header: React.FC = () => {
           to="/"
           className={classes.logo}
           onClick={() => {
-            menuToggleHandler();
-            if (location.pathname === "/") {
-              setMenuOpen(false);
+            menuToggleHandler()
+            if (location.pathname === '/') {
+              setMenuOpen(false)
             }
           }}
         >
@@ -72,52 +72,60 @@ const Header: React.FC = () => {
           }`}
         >
           <ul>
-            <li>
+            <li className={location.pathname === '/' ? classes.active : ''}>
               <Link
                 to="/"
                 onClick={() => {
-                  menuToggleHandler();
-                  if (location.pathname === "/") {
-                    setMenuOpen(false);
+                  menuToggleHandler()
+                  if (location.pathname === '/') {
+                    setMenuOpen(false)
                   }
                 }}
               >
                 About Me
               </Link>
             </li>
-            <li>
+            <li
+              className={location.pathname === '/values' ? classes.active : ''}
+            >
               <Link
                 to="/values"
                 onClick={() => {
-                  menuToggleHandler();
-                  if (location.pathname === "/values") {
-                    setMenuOpen(false);
+                  menuToggleHandler()
+                  if (location.pathname === '/values') {
+                    setMenuOpen(false)
                   }
                 }}
               >
                 Values
               </Link>
             </li>
-            <li>
+            <li
+              className={
+                location.pathname === '/services' ? classes.active : ''
+              }
+            >
               <Link
                 to="/services"
                 onClick={() => {
-                  menuToggleHandler();
-                  if (location.pathname === "/services") {
-                    setMenuOpen(false);
+                  menuToggleHandler()
+                  if (location.pathname === '/services') {
+                    setMenuOpen(false)
                   }
                 }}
               >
                 Services
               </Link>
             </li>
-            <li>
+            <li
+              className={location.pathname === '/reviews' ? classes.active : ''}
+            >
               <Link
                 to="/reviews"
                 onClick={() => {
-                  menuToggleHandler();
-                  if (location.pathname === "/reviews") {
-                    setMenuOpen(false);
+                  menuToggleHandler()
+                  if (location.pathname === '/reviews') {
+                    setMenuOpen(false)
                   }
                 }}
               >
@@ -138,7 +146,7 @@ const Header: React.FC = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

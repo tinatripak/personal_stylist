@@ -1,13 +1,13 @@
-import React from "react";
-import Layout from "../../components/Layout/Layout";
-import valuelist from "./valuelist";
-import styles from "./Values.module.scss";
+import React from 'react'
+import Layout from '../../components/Layout/Layout'
+import styles from './Values.module.scss'
+
+import valuelist from './valuelist'
 
 const Values: React.FC = () => {
   return (
     <Layout>
       <div className={styles.values}>
-        <div className={styles.backgroundImage}></div>
         <p className={styles.heading}>My Values</p>
         <div className={styles.valuelist}>
           {valuelist.map((value) => (
@@ -19,7 +19,7 @@ const Values: React.FC = () => {
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default Values;
+export default Values

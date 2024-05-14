@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 
 .header {
   width: 100%;
@@ -78,6 +78,9 @@
           margin-bottom: 0;
         }
         li {
+          &.active {
+            text-decoration: underline;
+          }
           &:not(:last-child) {
             @include breakpoint(burger) {
               margin-bottom: 0;

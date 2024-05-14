@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.loader_overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader {
+    font-size: 2rem;
+    color: $brown;
+  }
+}

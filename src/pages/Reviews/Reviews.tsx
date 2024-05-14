@@ -1,8 +1,9 @@
-import React from "react";
-import Layout from "../../components/Layout/Layout";
-import reviewlist from "./reviewlist";
-import ScrollCarousel from "scroll-carousel-react";
-import styles from "./Reviews.module.scss";
+import React from 'react'
+import Layout from '../../components/Layout/Layout'
+import ScrollCarousel from 'scroll-carousel-react'
+import styles from './Reviews.module.scss'
+
+import reviewlist from './reviewlist'
 
 const Reviews: React.FC = () => {
   return (
@@ -33,7 +34,7 @@ const Reviews: React.FC = () => {
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default Reviews;
+export default Reviews

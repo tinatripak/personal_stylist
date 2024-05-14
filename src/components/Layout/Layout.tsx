@@ -1,9 +1,9 @@
-import React from "react";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import React from 'react'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
       <div>{props.children}</div>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
