@@ -34,7 +34,11 @@ const GiftCard: React.FC = () => {
           <a href="https://t.me/libalizka">Contact Me</a>
         </div>
         <div className={styles.cardImage}>
-          <LazyLoadImage src="giftcertificate.png" alt="" effect="blur" />
+          <LazyLoadImage
+            src="images/giftcertificate.png"
+            alt=""
+            effect="blur"
+          />
         </div>
       </div>
     </div>
