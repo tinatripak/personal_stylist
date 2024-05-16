@@ -24,8 +24,9 @@
     .review {
       background-color: $bg;
       border: 5px solid $yellow;
+      border-radius: 20px;
       width: 30rem;
-      min-height: 18rem;
+      min-height: 20rem;
       font-size: 1.2rem;
       padding: 2rem 2rem;
 
@@ -34,7 +35,7 @@
         min-height: 25rem;
       }
       @include breakpoint(sm) {
-        width: 18rem;
+        width: 20rem;
       }
       .name {
         font-weight: 400;

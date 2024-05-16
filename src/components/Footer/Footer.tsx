@@ -7,19 +7,22 @@ import styles from './Footer.module.scss'
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
-      <p className={styles.heading}>Contacts</p>
+      <p className={styles.heading}>Get in touch</p>
       <div className={styles.social_media}>
-        <p className={styles.name}>Liza Balizka</p>
-        <div className={styles.icons}>
-          <a href="https://www.instagram.com/li.balizka/">
-            <FaInstagram />
-          </a>
-          <a href="https://t.me/libalizka">
-            <FaTelegramPlane />
-          </a>
-          <a href="mailto:collabs@lizabalizka.com">
-            <SiGmail />
-          </a>
+        <div>
+          <p>Social media</p>
+          <div className={styles.icons}>
+            <div>
+              <a href="https://www.instagram.com/li.balizka/">Instagram</a>
+            </div>
+            <div>
+              <a href="https://t.me/libalizka">Telegram</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>Email</p>
+          <a href="mailto:collabs@lizabalizka.com">collabs@lizabalizka.com</a>
         </div>
         <p className={styles.name}>Liza Balizka</p>
       </div>

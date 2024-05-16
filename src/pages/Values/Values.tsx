@@ -8,11 +8,11 @@ const Values: React.FC = () => {
   return (
     <Layout>
       <div className={styles.values}>
-        <p className={styles.heading}>My Values</p>
+        <p className={styles.heading}>My Own Values</p>
         <div className={styles.valuelist}>
           {valuelist.map((value) => (
             <div key={value.id} className={styles.value}>
-              <p className={styles.id}>/{value.id}</p>
+              <p className={styles.id}>{value.id}</p>
               <p className={styles.text}>{value.valueText}</p>
             </div>
           ))}

@@ -23,7 +23,7 @@ const Home: React.FC = () => {
                 <Typewriter
                   options={{
                     strings: [
-                      'Let your look speak for you. Individual style for the unique you!',
+                      'Be yourself and let your style speak uniquely for you!',
                     ],
                     autoStart: true,
                     loop: true,
@@ -48,10 +48,11 @@ const Home: React.FC = () => {
               <img src="/stylist_2.jpg" alt="Liza Balizka" />
             </div>
             <div className={styles.about}>
-              <p className={styles.greetings}>HI!</p>
+              <p className={styles.greetings}>HEY Sweatheart,</p>
               <p className={styles.bio}>
-                I am a <span>personal stylist Liza</span> and I want to help you
-                find and express you unique style.
+                I am a <span>personal stylist</span> and{' '}
+                <span>fashion influencer</span> Liza and I aim to assist you in
+                discovering and articulating your distinct style.
               </p>
               <p className={styles.mission_heading}>
                 <ReactTyped
@@ -63,9 +64,9 @@ const Home: React.FC = () => {
                 />
               </p>
               <p className={styles.mission}>
-                It is to make you happier by expressing your inner world through
-                your appearance, especially though your choice of style in
-                clothing.
+                It&apos;s about bringing you more joy by allowing your inner
+                essence to shine through your outward expression, particularly
+                via your exquisite selection of clothing styles.
               </p>
             </div>
           </div>

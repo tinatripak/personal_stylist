@@ -4,13 +4,22 @@
   background-color: $brown;
   color: $bg;
   padding: 0 2rem;
-  text-align: center;
+  font-family: $Josefin_Sans;
+  line-height: 2.5rem;
+
+  a {
+    text-decoration: none;
+    color: $bg;
+    font-weight: 100;
+  }
   .heading {
-    text-align: center;
+    text-align: end;
     padding-top: 3rem;
     margin: 0 auto 3rem auto;
-    font-size: 3.5rem;
+    font-size: 5rem;
     text-transform: uppercase;
+    font-family: $Ibarra_Real_Nova;
+
     @include breakpoint(lg) {
       font-size: 2rem;
     }
@@ -20,48 +29,31 @@
   }
   .social_media {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: start;
     gap: 5rem;
     padding-bottom: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     @include breakpoint(lg) {
       font-size: 1rem;
       gap: 3rem;
     }
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       display: block;
-      font-size: 1.5rem;
-      line-height: 4rem;
+      font-size: 1rem;
     }
 
-    .name {
-      font-weight: 100;
-    }
     .icons {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2rem;
+      gap: 5rem;
       @include breakpoint(lg) {
         gap: 1rem;
       }
-      a {
-        padding: 1.5rem 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        background-color: $bg;
-        font-size: 2.5rem;
-        @include breakpoint(lg) {
-          font-size: 1.5rem;
-        }
-
-        svg {
-          color: $yellow;
-        }
+      @include breakpoint(md) {
+        display: block;
       }
     }
   }

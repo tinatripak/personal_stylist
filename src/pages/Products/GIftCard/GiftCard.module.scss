@@ -1,0 +1,100 @@
+@import '../../../styles/variables.scss';
+
+.giftCard {
+  background-image: url('../../../../public/gloves.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  font-family: $Ibarra_Real_Nova;
+  .heading {
+    .carousel {
+      padding: 1rem 0;
+      .card {
+        .name {
+          text-align: center;
+          font-size: 3rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          white-space: nowrap;
+          padding-right: 3rem;
+          @include breakpoint(sm) {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+  .giftblock {
+    padding: 4rem 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    @include breakpoint(burger) {
+      padding: 8rem 7rem;
+    }
+    @include breakpoint(md) {
+      display: block;
+    }
+    .rules {
+      width: 40%;
+      @include breakpoint(md) {
+        width: 100%;
+      }
+      .heading {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        @include breakpoint(lg) {
+          font-size: 2rem;
+        }
+      }
+      .desc {
+        font-size: 1.2rem;
+        @include breakpoint(lg) {
+          font-size: 1rem;
+        }
+      }
+      a {
+        text-decoration: none;
+        line-height: 5rem;
+        font-family: $Josefin_Sans;
+        font-weight: 400;
+        text-transform: lowercase;
+        cursor: pointer;
+
+        background: transparent;
+        padding: 0.5rem 0.5rem;
+        margin: 3rem 0.5rem 0rem 0.5rem;
+        font-size: 1.5rem;
+
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        border-bottom-right-radius: 225px 15px;
+        border-bottom-left-radius: 15px 255px;
+        border: solid 2px $white;
+        color: $white;
+        &:hover {
+          border: solid 2px rgb(162, 0, 0);
+          color: rgb(162, 0, 0);
+          background: $white;
+        }
+      }
+    }
+    .cardImage {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 30rem;
+        @include breakpoint(lg) {
+          width: 20rem;
+        }
+        @include breakpoint(md) {
+          margin-top: 3rem;
+        }
+        @include breakpoint(sm) {
+          width: 15rem;
+        }
+      }
+    }
+  }
+}

@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                   }
                 }}
               >
-                About Me
+                About
               </Link>
             </li>
             <li
@@ -97,7 +97,7 @@ const Header: React.FC = () => {
                   }
                 }}
               >
-                Values
+                My Values
               </Link>
             </li>
             <li
@@ -115,6 +115,23 @@ const Header: React.FC = () => {
                 }}
               >
                 Services
+              </Link>
+            </li>
+            <li
+              className={
+                location.pathname === '/products' ? classes.active : ''
+              }
+            >
+              <Link
+                to="/products"
+                onClick={() => {
+                  menuToggleHandler()
+                  if (location.pathname === '/products') {
+                    setMenuOpen(false)
+                  }
+                }}
+              >
+                Products
               </Link>
             </li>
             <li
