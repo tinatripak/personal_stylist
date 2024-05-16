@@ -5,8 +5,8 @@
 
   .heading {
     .carousel {
-      border-bottom: 4px solid $yellow;
-      border-top: 4px solid $yellow;
+      border-bottom: 4px solid rgb(110 60 41);
+      border-top: 4px solid rgb(110 60 41);
       padding: 1rem 0;
       .service {
         .name {
@@ -27,6 +27,7 @@
   }
   .serviceList {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     color: $brown;
     display: flex;
     justify-content: center;
@@ -35,12 +36,18 @@
     flex-wrap: wrap;
     .service {
       width: 20rem;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
       @include breakpoint(sm) {
         width: 17rem;
       }
 
       img {
         width: 20rem;
+        height: 24rem;
+        object-fit: cover;
         @include breakpoint(sm) {
           width: 17rem;
           height: 17rem !important;
@@ -62,7 +69,9 @@
         line-height: 2rem;
       }
       &:nth-child(2),
-      &:nth-child(4) {
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(7) {
         img {
           height: 20rem;
           object-fit: cover;

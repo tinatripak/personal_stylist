@@ -7,17 +7,17 @@ const values: Value[] = [
   {
     id: '01',
     valueText:
-      'I recognize your uniqueness and individuality and avoid copying my own style.',
+      'I acknowledge and celebrate your distinctiveness, steering clear of imitating someone elseʼs style.',
   },
   {
     id: '02',
     valueText:
-      'I build your confidence not only in your choice of clothes, but also in your own personality.',
+      'I bolster your confidence in both your wardrobe selections and your innate personality.',
   },
   {
     id: '03',
     valueText:
-      'I create the atmosphere that encourages positive change, inspiring you to improve',
+      'I foster an environment that motivates positive transformation, inspiring you to strive for improvement.',
   },
 ]
 

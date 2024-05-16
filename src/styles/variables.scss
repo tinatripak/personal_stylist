@@ -3,14 +3,14 @@
 $Josefin_Sans: 'Josefin Sans', sans-serif;
 $Ibarra_Real_Nova: 'Ibarra Real Nova', serif;
 
-$bg: rgb(231, 230, 226);
+$bg: rgb(241, 240, 238);
 $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
 $dark: rgb(29, 29, 29);
-$terracotta: rgb(153, 93, 72);
-$brown: rgb(102 82 59);
+$terracotta: rgb(114 47 23);
+$brown: rgb(68 43 13);
 $light_brown: rgb(178 176 163);
-$yellow: rgb(200 148 61);
+$yellow: rgb(112, 45, 18);
 $primary: rgb(162, 162, 246);
 
 $screenHeight: 100vh;
@@ -19,6 +19,11 @@ $headerHeight: 100px;
 @mixin breakpoint($point) {
   @if $point == burger {
     @media (min-width: 1290px) {
+      @content;
+    }
+  }
+  @if $point == xl {
+    @media (max-width: 1289px) {
       @content;
     }
   }

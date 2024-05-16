@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import ScrollCarousel from 'scroll-carousel-react'
 import styles from './Reviews.module.scss'
+import { CgQuote } from 'react-icons/cg'
 
 import reviewlist from './reviewlist'
 
@@ -9,7 +10,7 @@ const Reviews: React.FC = () => {
   return (
     <Layout>
       <div className={styles.reviews}>
-        <p className={styles.heading}>Reviews</p>
+        <p className={styles.heading}>Precious Reviews</p>
         <ScrollCarousel
           autoplay
           smartSpeed
@@ -18,7 +19,8 @@ const Reviews: React.FC = () => {
         >
           {reviewlist.map((review) => (
             <div key={review.id} className={styles.review}>
-              <p className={styles.name}>/{review.name}</p>
+              <p className={styles.name}>{review.name}</p>
+              <CgQuote />
               <p className={styles.text}>{review.reviewText}</p>
             </div>
           ))}
