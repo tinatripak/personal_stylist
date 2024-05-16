@@ -19,7 +19,7 @@ const Home: React.FC = () => {
           <div className={styles.first_block}>
             <div className={styles.main}>
               <p className={styles.heading}>Personal Stylist</p>
-              <p className={styles.subheading}>
+              <div className={styles.subheading}>
                 <Typewriter
                   options={{
                     strings: [
@@ -30,14 +30,14 @@ const Home: React.FC = () => {
                     deleteSpeed: 0,
                   }}
                 />
-              </p>
+              </div>
               <a className={styles.service_button} href="/services">
                 My Services
               </a>
             </div>
             <div className={styles.first_image}>
               <img
-                src="/stylist.jpg"
+                src="/images/stylist.jpg"
                 alt="Liza Balizka"
                 onLoad={handleImageLoad}
               />
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
           </div>
           <div className={styles.second_block}>
             <div className={styles.second_image}>
-              <img src="/stylist_2.jpg" alt="Liza Balizka" />
+              <img src="/images/stylist_2.jpg" alt="Liza Balizka" />
             </div>
             <div className={styles.about}>
               <p className={styles.greetings}>HEY Sweatheart,</p>

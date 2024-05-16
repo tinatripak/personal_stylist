@@ -18,7 +18,7 @@ const Products: React.FC = () => {
         <div className={styles.product}>
           <div className={styles.image}>
             <img
-              src="/products.jpg"
+              src="/images/products.jpg"
               alt="Liza Balizka"
               onLoad={handleImageLoad}
             />

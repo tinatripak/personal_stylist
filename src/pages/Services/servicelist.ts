@@ -17,7 +17,7 @@ const services: Service[] = [
     name: 'Personal consultation',
     description:
       'An in-depth analysis of your style based on your personality and lifestyle.',
-    photoUrl: '/consultation.jpg',
+    photoUrl: '/images/consultation.jpg',
     fullDescription: [
       'We conduct a survey to better understand your needs and style preferences.',
       'During the consultation, we will talk about things that suit your figure, color combinations in your outfits, styles, secrets of budget shopping from famous fashion influencers, and much more.',
@@ -35,7 +35,7 @@ const services: Service[] = [
     name: 'Wardrobe analysis',
     description:
       'For those who want to look at their wardrobe from a different, stylish and perspective.',
-    photoUrl: '/analysis.jpg',
+    photoUrl: '/images/analysis.jpg',
     fullDescription: [
       'We are conducting a survey.',
       'We analyze your wardrobe.',
@@ -55,7 +55,7 @@ const services: Service[] = [
     name: 'Wardrobe analysis OFFLINE',
     description:
       'The same option like a Wardrobe analysis, but Offline in Kyiv/Odesa',
-    photoUrl: '/offline.jpeg',
+    photoUrl: '/images/offline.jpeg',
     fullDescription: [
       'We are conducting a survey.',
       'We analyze your wardrobe in person with a visit.',
@@ -75,7 +75,7 @@ const services: Service[] = [
     name: 'Event styling',
     description:
       'I will help you to maky your event day unrivalled with customized styling of your special look.',
-    photoUrl: '/photoshoot.jpg',
+    photoUrl: '/images/photoshoot.jpg',
     fullDescription: [
       'We are conducting a survey.',
       'I take into account your wishes and body features.',
@@ -94,7 +94,7 @@ const services: Service[] = [
     name: 'Capsule wardrobe',
     description:
       'For those who value wardrobe space and are looking for optimal functionality and time savings in everyday life for a cold or warm season.',
-    photoUrl: '/capsule.jpg',
+    photoUrl: '/images/capsule.jpg',
     fullDescription: [
       'We conduct a survey to better understand your needs and style preferences.',
       'We select items exclusively according to your taste, taking into account the characteristics of your figure and the chosen price segment (Ukrainian brands/market/mid-range/luxury).',
@@ -112,7 +112,7 @@ const services: Service[] = [
     name: 'Mini capsule',
     description:
       'For those who value wardrobe space and want to have 15-20 incredibly amazing looks from 5-8 clothes.',
-    photoUrl: '/mini-capsule.jpeg',
+    photoUrl: '/images/mini-capsule.jpeg',
     fullDescription: [
       'We conduct a survey to better understand your needs and style preferences.',
       'We select items exclusively according to your taste, taking into account the characteristics of your figure and the chosen price segment (Ukrainian brands/market/mid-range/luxury).',
@@ -130,7 +130,7 @@ const services: Service[] = [
     name: 'Shopping together',
     description:
       'We are going to shop and buy clothes together, I will teach you how to choose clothes for your body type',
-    photoUrl: '/shopping-together.jpeg',
+    photoUrl: '/images/shopping-together.jpeg',
     fullDescription: [
       'We are conducting a survey.',
       'We make a list of things we want to pick up.',

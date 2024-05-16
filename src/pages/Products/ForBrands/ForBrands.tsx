@@ -24,7 +24,7 @@ const ForBrands: React.FC = () => {
       <div className={styles.lectionsIntegrations}>
         <div className={styles.lections}>
           <LazyLoadImage
-            src="lection.jpg"
+            src="images/lection.jpg"
             alt="Lector"
             effect="blur"
             className={styles.lazyImage}
@@ -58,7 +58,7 @@ const ForBrands: React.FC = () => {
             <a href="https://t.me/libalizka">Contact Me</a>
           </div>
           <LazyLoadImage
-            src="integrations.jpg"
+            src="images/integrations.jpg"
             alt="Advertisement"
             effect="blur"
             className={styles.lazyImage}
