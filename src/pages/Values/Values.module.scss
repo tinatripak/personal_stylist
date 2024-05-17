@@ -53,12 +53,3 @@
     }
   }
 }
-
-@keyframes scrollBackground {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-200px);
-  } /* Adjust distance for desired scrolling speed */
-}
