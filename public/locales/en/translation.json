@@ -1,3 +1,66 @@
 {
-  "loading_text": "Liza Balizka"
+  "loading_text": "Liza Balizka",
+
+  "home_title": "Personal Stylist",
+  "home_subtitle": "Be yourself and let your style speak uniquely for you!",
+  "home_button": "My services",
+  "home_hiText": "HEY Sweatheart,",
+  "home_startText": "I am a",
+  "home_stylistText": "personal stylist",
+  "home_andText": "and",
+  "home_fashionText": "fashion influencer",
+  "home_endText": "Liza and I aim to assist you in discovering and articulating your distinct style",
+  "home_missionWord": "My mission",
+  "home_desireWord": "My desire",
+  "home_purposeWord": "My purpose",
+  "home_missionText": "It&apos;s about bringing you more joy by allowing your inneressence to shine through your outward expression, particularly via your exquisite selection of clothing styles.",
+
+  "header_about": "About Me",
+  "header_values": "My values",
+  "header_services": "Services",
+  "header_products": "Products",
+  "header_reviews": "Reviews",
+
+  "values_title": "My own values",
+  "values_value1": "I acknowledge and celebrate your distinctiveness, steering clear of imitating someone elseʼs style.",
+  "values_value2": "I bolster your confidence in both your wardrobe selections and your innate personality.",
+  "values_value3": "I foster an environment that motivates positive transformation, inspiring you to strive for improvement.",
+
+  "services_title": "My Services",
+  "services_price": "Price",
+  "services_oldprice": "Old Price",
+
+  "reviews_title": "Precious Reviews",
+  "reviews_quote": "Don't be into trends. Don't make fashion own you, but you decide what you are, what you want to express by the way you dress and the way to live.",
+  "reviews_quotePerson": " Gianni Versace",
+
+  "products_title": "My Products",
+  "products_presentationName": "How upgrade your style in 2024",
+  "products_presentationDesc1": "trends",
+  "products_presentationDesc2": "main leading colours of 2024",
+  "products_presentationDesc3": "style formulas for whole seasons",
+  "products_presentationButton": "Download",
+
+  "giftcad_title": "Gift Card",
+  "giftcad_desc": "You can purchase this service as a gift",
+  "giftcad_rule": "All you need to do is contact me in a format that is convenient for you, so that together we can choose the service that will be most effective in your case.",
+  "giftcad_giftCardButton": "Contact Me",
+
+  "brands_title": "For Brands",
+  "brands_lectionTitle": "Lection about the fashion and style",
+  "brands_lectionRule": "suitable for customers and staff",
+  "brands_lectionAdd": "The topic, location, and cost are discussed individually",
+  "brands_lectionButton": "Contact Me",
+
+  "brands_integrationTitle": "Advertising integrations",
+  "brands_integrationRule1": "online or offline brand reviews",
+  "brands_integrationRule2": "photo or video in the profile",
+  "brands_integrationRule3": "unpacking",
+  "brands_integrationAdd": "I am also considering other formats of cooperation",
+  "brands_integrationButton": "Contact Me",
+
+  "footer_name": "Liza Balizka",
+  "footer_title": "Get in touch",
+  "footer_social": "Social media",
+  "footer_email": "Email"
 }

@@ -2,9 +2,13 @@ import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import ScrollCarousel from 'scroll-carousel-react'
 import 'react-lazy-load-image-component/src/effects/blur.css'
+import { useTranslation } from 'react-i18next'
+
 import styles from './GiftCard.module.scss'
 
 const GiftCard: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
     <div className={styles.giftCard}>
       <div className={styles.heading}>
@@ -16,22 +20,16 @@ const GiftCard: React.FC = () => {
         >
           {Array.from({ length: 7 }, (_, index) => (
             <div key={index} className={styles.card}>
-              <p className={styles.name}>Gift Card</p>
+              <p className={styles.name}>{t('giftcad_title')}</p>
             </div>
           ))}
         </ScrollCarousel>
       </div>
       <div className={styles.giftblock}>
         <div className={styles.rules}>
-          <p className={styles.heading}>
-            You can purchase this service as a gift
-          </p>
-          <p className={styles.desc}>
-            All you need to do is contact me in a format that is convenient for
-            you, so that together we can choose the service that will be most
-            effective in your case.{' '}
-          </p>
-          <a href="https://t.me/libalizka">Contact Me</a>
+          <p className={styles.heading}>{t('giftcad_desc')}</p>
+          <p className={styles.desc}>{t('giftcad_rule')}</p>
+          <a href="https://t.me/libalizka">{t('giftcad_giftCardButton')}</a>
         </div>
         <div className={styles.cardImage}>
           <LazyLoadImage

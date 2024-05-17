@@ -1,16 +1,17 @@
 import React from 'react'
-import { FaInstagram, FaTelegramPlane } from 'react-icons/fa'
-import { SiGmail } from 'react-icons/si'
+import { useTranslation } from 'react-i18next'
 
 import styles from './Footer.module.scss'
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
     <footer className={styles.footer}>
-      <p className={styles.heading}>Get in touch</p>
+      <p className={styles.heading}>{t('footer_title')}</p>
       <div className={styles.social_media}>
         <div>
-          <p>Social media</p>
+          <p>{t('footer_social')}</p>
           <div className={styles.icons}>
             <div>
               <a href="https://www.instagram.com/li.balizka/">Instagram</a>
@@ -21,10 +22,10 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div>
-          <p>Email</p>
+          <p>{t('footer_email')}</p>
           <a href="mailto:collabs@lizabalizka.com">collabs@lizabalizka.com</a>
         </div>
-        <p className={styles.name}>Liza Balizka</p>
+        <p className={styles.name}>{t('footer_name')}</p>
       </div>
     </footer>
   )

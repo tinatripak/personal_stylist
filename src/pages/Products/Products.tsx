@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
-import styles from './Products.module.scss'
 import Layout from '../../components/Layout/Layout'
 import Loader from '../../components/Loader/Loader'
 import ForBrands from './ForBrands/ForBrands'
 import GiftCard from './GIftCard/GiftCard'
+import { useTranslation } from 'react-i18next'
+
+import styles from './Products.module.scss'
 
 const Products: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState(false)
+  const { t } = useTranslation()
 
   const handleImageLoad = () => {
     setImageLoaded(true)
@@ -24,14 +27,14 @@ const Products: React.FC = () => {
             />
           </div>
           <div className={styles.presentation}>
-            <p className={styles.heading}>My Products</p>
-            <p className={styles.title}>How upgrade your style in 2024</p>
+            <p className={styles.heading}>{t('products_title')}</p>
+            <p className={styles.title}>{t('products_presentationName')}</p>
             <ul>
-              <li>trends</li>
-              <li>main leading colours of 2024</li>
-              <li>style formulas for whole seasons</li>
+              <li>{t('products_presentationDesc1')}</li>
+              <li>{t('products_presentationDesc2')}</li>
+              <li>{t('products_presentationDesc3')}</li>
             </ul>
-            <button>Download</button>
+            <button>{t('products_presentationButton')}</button>
           </div>
         </div>
         <GiftCard />

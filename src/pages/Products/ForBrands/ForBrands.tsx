@@ -2,9 +2,13 @@ import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import ScrollCarousel from 'scroll-carousel-react'
 import 'react-lazy-load-image-component/src/effects/blur.css'
+import { useTranslation } from 'react-i18next'
+
 import styles from './ForBrands.module.scss'
 
 const ForBrands: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
     <div className={styles.forBrands}>
       <div className={styles.heading}>
@@ -16,7 +20,7 @@ const ForBrands: React.FC = () => {
         >
           {Array.from({ length: 7 }, (_, index) => (
             <div key={index} className={styles.brand}>
-              <p className={styles.name}>For Brands</p>
+              <p className={styles.name}>{t('brands_title')}</p>
             </div>
           ))}
         </ScrollCarousel>
@@ -30,32 +34,30 @@ const ForBrands: React.FC = () => {
             className={styles.lazyImage}
           />
           <div>
-            <p className={styles.heading}>
-              Lection about the fashion and style
-            </p>
+            <p className={styles.heading}>{t('brands_lectionTitle')}</p>
             <ul>
-              <li>suitable for customers and staff</li>
+              <li>{t('brands_lectionRule')}</li>
             </ul>
             <span>
-              The topic, location, and cost are discussed individually
+              {t('brands_lectionAdd')}
               <br />
             </span>
-            <a href="https://t.me/libalizka">Contact Me</a>
+            <a href="https://t.me/libalizka">{t('brands_lectionButton')}</a>
           </div>
         </div>
         <div className={styles.integrations}>
           <div>
-            <p className={styles.heading}>Advertising integrations</p>
+            <p className={styles.heading}>{t('brands_integrationTitle')}</p>
             <ul>
-              <li>online or offline brand reviews</li>
-              <li>photo or video in the profile</li>
-              <li>unpacking</li>
+              <li>{t('brands_integrationRule1')}</li>
+              <li>{t('brands_integrationRule2')}</li>
+              <li>{t('brands_integrationRule3')}</li>
             </ul>
             <span>
-              I am also considering other formats of cooperation
+              {t('brands_integrationAdd')}
               <br />
             </span>
-            <a href="https://t.me/libalizka">Contact Me</a>
+            <a href="https://t.me/libalizka">{t('brands_integrationButton')}</a>
           </div>
           <LazyLoadImage
             src="images/integrations.jpg"

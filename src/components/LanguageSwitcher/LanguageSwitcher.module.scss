@@ -1,0 +1,106 @@
+@import '../../styles/variables.scss';
+
+// .dropdownLanguages {
+//   position: relative;
+//   display: inline-block;
+//   button {
+//     cursor: pointer;
+//     outline: none;
+//     padding: 0.75rem 1.25rem;
+//     font-size: 2rem;
+//     font-family: inherit;
+//     color: $brown;
+//     border: 1px solid transparent;
+//     transition: 0.3s ease all;
+
+//     &:hover {
+//       background: rgba($brown, 0.1);
+//     }
+//     &:active {
+//       background: linear-gradient(rgba($brown, 0.2), rgba($brown, 0.3));
+//     }
+//   }
+//   .dropdown {
+//     background-color: rgb(255, 255, 255);
+//     position: absolute;
+//     display: none;
+//     flex-direction: column !important;
+//     right: 0;
+
+//     &:hover {
+//       display: block !important;
+//     }
+//     li {
+//       line-height: 3rem;
+//       &:hover {
+//         width: 100% !important;
+//         background: rgba($brown, 0.1) !important;
+//       }
+//       a {
+//         &:hover {
+//           background: none !important;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  .dropbtn {
+    cursor: pointer;
+    outline: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 2rem;
+    font-family: inherit;
+    color: $brown;
+    border: 1px solid transparent;
+    transition: 0.3s ease all;
+
+    &:hover {
+      background: rgba($brown, 0.2);
+    }
+    &:active {
+      background: linear-gradient(rgba($brown, 0.2), rgba($brown, 0.3));
+    }
+  }
+
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    right: 0;
+
+    li {
+      &.selected {
+        background: rgba($brown, 0.5);
+
+        a {
+          color: $white;
+        }
+      }
+      a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          background-color: rgba($brown, 0.2);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .dropdownContent {
+      display: block;
+    }
+  }
+}

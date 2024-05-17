@@ -1,10 +1,14 @@
 interface Service {
   id: string
   name: string
+  nameUkr: string
   description: string
+  descriptionUkr: string
   photoUrl: string
   fullDescription: string[]
+  fullDescriptionUkr: string[]
   result: string
+  resultUkr: string
   price: string
   oldPrice: string
   offlinePrice: string
@@ -29,6 +33,16 @@ const services: Service[] = [
     oldPrice: '',
     offlinePrice: '90',
     onlinePrice: '120',
+    nameUkr: 'Консультація зі стилю',
+    descriptionUkr:
+      'Глибокий аналіз вашого стилю, який заснований на вашій особистості та способі життя.',
+    fullDescriptionUkr: [
+      'Проводимо анкетування для кращого розуміння ваших потреба та стилітсичних побажань.',
+      'Під час консультації ми поговоримо про речі, котрі пасують у вашій фігурі, кольорові поєднання у образах, стилі, секрети бюджетного шопінгу відомих fashion інфлюєнсерів і багато іншого.',
+      'Експертні поради щодо особистого стилю.',
+    ],
+    resultUkr:
+      'Після консультації ви отримаєте файл із записом усіх обговорених питань, який залишиться у вас назавжди.',
   },
   {
     id: '2',
@@ -49,12 +63,24 @@ const services: Service[] = [
     oldPrice: '400',
     offlinePrice: '',
     onlinePrice: '',
+    nameUkr: 'Розбір гардеробу',
+    descriptionUkr:
+      'Для тих, хто хоче поглянути на свій гардероб під іншим, стильним і перспективним кутом.',
+    fullDescriptionUkr: [
+      'Проводимо анкетування.',
+      'Аналізуємо ваш гардероб.',
+      'Враховуємо ваші побажання щодо нового гардеробу',
+      'Підбираємо речі, яких не вистачає у вашій шафі.',
+      'Створюємо стильні образи, котрі пасуватимуть саме вам і вашій фігурі й відповідатимуть вашому смаку.',
+    ],
+    resultUkr:
+      'В обрану вами дату ви отримаєте файл з розбіром гардеробу, у якому буде до 100 образів, аналіз гардеробу і поради щодо особистого стилю.',
   },
   {
     id: '3',
     name: 'Wardrobe analysis OFFLINE',
     description:
-      'The same option like a Wardrobe analysis, but Offline in Kyiv/Odesa',
+      'The same option like a Wardrobe analysis, but Offline in Kyiv/Odesa.',
     photoUrl: '/images/offline.jpeg',
     fullDescription: [
       'We are conducting a survey.',
@@ -69,6 +95,18 @@ const services: Service[] = [
     oldPrice: '',
     offlinePrice: '',
     onlinePrice: '',
+    nameUkr: 'Розбір гардеробу OFFLINE Одеса/Київ',
+    descriptionUkr:
+      'Те саме, що й аналіз гардеробу, але в режимі OFFLINE у Києві/Одесі.',
+    fullDescriptionUkr: [
+      'Проводимо анкетування.',
+      'Аналізуємо ваш гардероб особисто з виїздом.',
+      'Враховуємо ваші побажання щодо нового гардеробу',
+      'Створюємо шопінг лист речей, яких не вистачає у вашій шафі.',
+      'Створюємо стильні образи, котрі пасуватимуть саме вам і вашій фігурі й відповідатимуть вашому смаку.',
+    ],
+    resultUkr:
+      'В обрану дату ви отримаєте файл з розбіром гардеробу, у якому буде від 40 до 100 образів, аналіз гардеробу, «Шопінг лист» і поради щодо особистого стилю.',
   },
   {
     id: '4',
@@ -88,6 +126,17 @@ const services: Service[] = [
     oldPrice: '320',
     offlinePrice: '',
     onlinePrice: '',
+    nameUkr: 'Підбір образу на подію',
+    descriptionUkr:
+      'Я допоможу вам зробити день вашої події неперевершеним завдяки особливому образу, який буде індивідуально підібраний для вас.',
+    fullDescriptionUkr: [
+      'Проводимо анкетування.',
+      'Враховую ваші побажання та особливості фігури.',
+      'Підбираю образи на важливу для вас подію(весілля/день народження/фотосесія і тп).',
+      'Підбираю до 10 варіантів образів(включно зі взуттям та аксесуарами) і надаю посилання на них.',
+    ],
+    resultUkr:
+      'Довірте ваш образ у важливі моменти мені. Вам більше не потрібно гадати що одягнути на конференцію/фотосесію/випускний чи весілля, я з радістю підберу до 10 варіантів образів для вас.',
   },
   {
     id: '5',
@@ -106,6 +155,16 @@ const services: Service[] = [
     oldPrice: '360',
     offlinePrice: '',
     onlinePrice: '',
+    nameUkr: 'Капсульний гардероб',
+    descriptionUkr:
+      'Для тих, хто цінує простір в гардеробі та шукає оптимальну функціональність і економію часу в повсякденному житті для холодної або теплої пори року.',
+    fullDescriptionUkr: [
+      'Проводимо анкетування для кращого розуміння ваших потреба та стилітсичних побажань.',
+      'Підбираємо речі виключно за вашим смаком з урахуванням особливостей вашої фігури та обраного цінового сегменту (українські бренди/масмаркет/мідл/люкс).',
+      'Підбираємо від 10 до 15 речей, що створюють повноцінний гардероб на холодний або теплий сезон.',
+    ],
+    resultUkr:
+      'В обрану дату ви отримаєте файл з "Капсульним гардеробом", у якому буде 50 образів і порад щодо особистого стилю.',
   },
   {
     id: '6',
@@ -124,12 +183,22 @@ const services: Service[] = [
     oldPrice: '',
     offlinePrice: '',
     onlinePrice: '',
+    nameUkr: 'Міні капсула',
+    descriptionUkr:
+      'Для тих, хто цінує простір в гардеробі і хоче мати 15-20 неймовірно приголомшливих образів з всього-на-всього 5-8 речей.',
+    fullDescriptionUkr: [
+      'Проводимо анкетування для кращого розуміння ваших потреба та стилітсичних побажань.',
+      'Підбираємо речі виключно за вашим смаком з урахуванням особливостей вашої фігури та обраного цінового сегменту (українські бренди/масмаркет/мідл/люкс).',
+      'Підбираємо від 5 до 8 речей, що створюють вражаючі 15-20 образів.',
+    ],
+    resultUkr:
+      'В обрану дату ви отримаєте файл з "Міні капсулою", у якому буде від 15 до 20 образів і порад щодо особистого стилю.',
   },
   {
     id: '7',
     name: 'Shopping together',
     description:
-      'We are going to shop and buy clothes together, I will teach you how to choose clothes for your body type',
+      'We are going to shop and buy clothes together, I will teach you how to choose clothes for your body type.',
     photoUrl: '/images/shopping-together.jpeg',
     fullDescription: [
       'We are conducting a survey.',
@@ -144,20 +213,19 @@ const services: Service[] = [
     oldPrice: '',
     offlinePrice: '',
     onlinePrice: '',
+    nameUkr: 'Шопінг супровід',
+    descriptionUkr:
+      'Ми будемо разом ходити по магазинах і купувати одяг, я навчу тебе підбирати одяг саме під твій тип фігури.',
+    fullDescriptionUkr: [
+      'Проводимо анкетування.',
+      'Складаємо список з речей котрі хочемо підібрати.',
+      'Вирушаємо разом на шопінг(Одеса/Київ).',
+      'Під час шопінгу я навчу підбирати речі саме під вашу фігуру.',
+      'Розкрию секрети економного шопінгу та проконсультую з приводу будь-яких стилістичних питань.',
+    ],
+    resultUkr:
+      'Підбираємо усі необхідні речі, якщо чогось не знайдемо - я підбираю цю річ онлайн і відправляю список на замовлення. Після послуги діє безкоштовне онлайн консультування протягом 30 днів.',
   },
 ]
 
-const serviceList: Service[] = services.map((service) => ({
-  id: service.id,
-  name: service.name,
-  description: service.description,
-  photoUrl: service.photoUrl,
-  fullDescription: service.fullDescription,
-  result: service.result,
-  price: service.price,
-  oldPrice: service.oldPrice,
-  offlinePrice: service.offlinePrice,
-  onlinePrice: service.onlinePrice,
-}))
-
-export default serviceList
+export default services

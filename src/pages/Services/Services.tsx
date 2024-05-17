@@ -6,12 +6,14 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 import Loader from '../../components/Loader/Loader'
 import servicelist from './servicelist'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 import styles from './Services.module.scss'
 
 const Services: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState(false)
   const navigate = useNavigate()
+  const { t, i18n } = useTranslation()
 
   const handleImageLoad = () => {
     setImageLoaded(true)
@@ -30,7 +32,7 @@ const Services: React.FC = () => {
             >
               {Array.from({ length: 7 }, (_, index) => (
                 <div key={index} className={styles.service}>
-                  <p className={styles.name}>My Services</p>
+                  <p className={styles.name}>{t('services_title')}</p>
                 </div>
               ))}
             </ScrollCarousel>
@@ -49,8 +51,14 @@ const Services: React.FC = () => {
                   effect="blur"
                   onLoad={handleImageLoad}
                 />
-                <p className={styles.name}>{service.name}</p>
-                <p className={styles.description}>{service.description}</p>
+                <p className={styles.name}>
+                  {i18n.language == 'en' ? service.name : service.nameUkr}
+                </p>
+                <p className={styles.description}>
+                  {i18n.language == 'en'
+                    ? service.description
+                    : service.descriptionUkr}
+                </p>
               </div>
             ))}
           </div>

@@ -4,10 +4,11 @@ import Loader from '../../components/Loader/Loader'
 import styles from './Home.module.scss'
 import Typewriter from 'typewriter-effect'
 import { ReactTyped } from 'react-typed'
+import { useTranslation } from 'react-i18next'
 
 const Home: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState(false)
-
+  const { t } = useTranslation()
   const handleImageLoad = () => {
     setImageLoaded(true)
   }
@@ -18,13 +19,11 @@ const Home: React.FC = () => {
         <div className={styles.home}>
           <div className={styles.first_block}>
             <div className={styles.main}>
-              <p className={styles.heading}>Personal Stylist</p>
+              <p className={styles.heading}>{t('home_title')}</p>
               <div className={styles.subheading}>
                 <Typewriter
                   options={{
-                    strings: [
-                      'Be yourself and let your style speak uniquely for you!',
-                    ],
+                    strings: [`${t('home_subtitle')}`],
                     autoStart: true,
                     loop: true,
                     deleteSpeed: 0,
@@ -32,7 +31,7 @@ const Home: React.FC = () => {
                 />
               </div>
               <a className={styles.service_button} href="/services">
-                My Services
+                {t('home_button')}
               </a>
             </div>
             <div className={styles.first_image}>
@@ -48,26 +47,26 @@ const Home: React.FC = () => {
               <img src="/images/stylist_2.jpg" alt="Liza Balizka" />
             </div>
             <div className={styles.about}>
-              <p className={styles.greetings}>HEY Sweatheart,</p>
+              <p className={styles.greetings}>{t('home_hiText')}</p>
               <p className={styles.bio}>
-                I am a <span>personal stylist</span> and{' '}
-                <span>fashion influencer</span> Liza and I aim to assist you in
-                discovering and articulating your distinct style.
+                {t('home_startText')} <span>{t('home_stylistText')}</span>{' '}
+                {t('home_andText')} <span>{t('home_fashionText')}</span>{' '}
+                {t('home_endText')}
               </p>
               <p className={styles.mission_heading}>
                 <ReactTyped
-                  strings={['My mission', 'My desire', 'My purpose']}
+                  strings={[
+                    `${t('home_missionWord')}`,
+                    `${t('home_desireWord')}`,
+                    `${t('home_purposeWord')}`,
+                  ]}
                   typeSpeed={100}
                   loop
                   backSpeed={20}
                   showCursor={true}
                 />
               </p>
-              <p className={styles.mission}>
-                It&apos;s about bringing you more joy by allowing your inner
-                essence to shine through your outward expression, particularly
-                via your exquisite selection of clothing styles.
-              </p>
+              <p className={styles.mission}>{t('home_missionText')}</p>
             </div>
           </div>
         </div>

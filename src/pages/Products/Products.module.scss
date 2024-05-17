@@ -68,9 +68,14 @@
       font-size: 2rem;
       margin: 1.5rem 0;
       width: 70%;
+
+      width: fit-content;
+
       @include breakpoint(xl) {
         font-size: 1.5rem;
-        width: 100%;
+      }
+      @include breakpoint(md) {
+        text-align: center;
       }
     }
     ul {
@@ -78,7 +83,6 @@
       font-weight: 200;
       margin-left: 1rem;
       line-height: 2.5rem;
-      width: max-content;
 
       li {
         font-size: 1.3rem;

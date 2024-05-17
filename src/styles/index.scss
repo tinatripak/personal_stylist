@@ -10,6 +10,11 @@ body {
   width: 100%;
   color: $black;
   background-color: $bg;
+  // font-family: $El_Messiri;
+}
+
+body[lang='ua'] {
+  font-family: $Noto_Serif !important;
 }
 
 #root {

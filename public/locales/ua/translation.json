@@ -1,3 +1,66 @@
 {
-  "loading_text": "Ліза Балицька"
+  "loading_text": "Ліза Балицька",
+
+  "home_title": "Персональний стиліст",
+  "home_subtitle": "Будьте собою і нехай ваш стиль говорить за вас!",
+  "home_button": "Мої послуги",
+  "home_hiText": "Привіт Кицюнчики,",
+  "home_startText": "Я - ",
+  "home_stylistText": "персональний стиліст",
+  "home_andText": "і",
+  "home_fashionText": "fashion-інфлюенсер",
+  "home_endText": "Ліза і я прагну допомогти вам знайти і сформулювати свій особливий стиль",
+  "home_missionWord": "Моя місія",
+  "home_desireWord": "Моє бажання",
+  "home_purposeWord": "Моя ціль",
+  "home_missionText": "Приносити вам більше радості, дозволяючи вашій внутрішній сутності сяяти через ваше зовнішнє вираження, зокрема, через ваш вишуканий вибір стилю в одязі.",
+
+  "header_about": "Про мене",
+  "header_values": "Цінності",
+  "header_services": "Мої послуги",
+  "header_products": "Продукти",
+  "header_reviews": "Відгуки",
+
+  "values_title": "Мої власні цінності",
+  "values_value1": "",
+  "values_value2": "",
+  "values_value3": "",
+
+  "services_title": "Мої послуги",
+  "services_price": "Ціна",
+  "services_oldprice": "Стара ціна",
+
+  "reviews_title": "Безцінні Відгуки",
+  "reviews_quote": "Не йдіть на поводу у трендів. Не дозволяйте моді володіти вами, ви самі вирішуєте, ким ви є, що ви хочете виразити через те, як ви одягаєтесь і як живете.",
+  "reviews_quotePerson": "Джанні Версаче",
+
+  "products_title": "Мої продукти",
+  "products_presentationName": "Як оновити свій стиль у 2024 році",
+  "products_presentationDesc1": "тренди",
+  "products_presentationDesc2": "основні кольори 2024",
+  "products_presentationDesc3": "формули стилю для цих сезонів",
+  "products_presentationButton": "Завантажити",
+
+  "giftcad_title": "Gift Card",
+  "giftcad_desc": "Ви можете придбати цю послугу в подарунок",
+  "giftcad_rule": "Вам потрібно лише зв’язатися зі мною у зручному для вас форматі, щоб ми разом підібрали ту послугу, яка буде максимально ефективною у вашому випадку.",
+  "giftcad_giftCardButton": "Зв'язатись",
+
+  "brands_title": "Для брендів",
+  "brands_lectionTitle": "Лекція про моду і стиль",
+  "brands_lectionRule": "підходить для клієнтів і персоналу",
+  "brands_lectionAdd": "Тематика, місце та вартість обговорюються індивідуально",
+  "brands_lectionButton": "Зв'язатись",
+
+  "brands_integrationTitle": "Рекламні інтеграції",
+  "brands_integrationRule1": "огляди брендів онлайн або офлайн",
+  "brands_integrationRule2": "фото або відео в профілі",
+  "brands_integrationRule3": "розпаковка",
+  "brands_integrationAdd": "Також розглядаю інші формати співпраці",
+  "brands_integrationButton": "Зв'язатись",
+
+  "footer_name": "Liza Balizka",
+  "footer_title": "Зв'яжіться зі мною",
+  "footer_social": "Соціальні мережи",
+  "footer_email": "Пошта"
 }

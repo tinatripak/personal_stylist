@@ -6,6 +6,9 @@
   font-weight: 200;
   min-height: 100vh;
   margin-bottom: 2rem;
+  @include breakpoint(md) {
+    padding: 8rem 1.5rem 14rem 1.5rem;
+  }
 
   .heading {
     text-align: center;
@@ -32,7 +35,7 @@
 
       @include breakpoint(lg) {
         width: 20rem;
-        min-height: 25rem;
+        min-height: 30rem;
       }
       @include breakpoint(sm) {
         width: 20rem;
