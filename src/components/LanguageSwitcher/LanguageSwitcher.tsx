@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import i18next from 'i18next'
 import { PiGlobeHemisphereEastLight } from 'react-icons/pi'
 import styles from './LanguageSwitcher.module.scss'
 import { useTranslation } from 'react-i18next'
+import Cookies from 'js-cookie'
 
 interface Language {
   code: string
@@ -26,15 +27,17 @@ const LanguageSwitcher: React.FC = () => {
       dir: '',
     },
   ]
-  const { i18n } = useTranslation()
 
-  const [selectedLanguage, setSelectedLanguage] = useState<string>(
-    i18n.language
-  )
+  const getLanguageCookie = () => {
+    return Cookies.get('i18next')
+  }
+
+  const [selectedLanguage, setSelectedLanguage] =
+    useState<string>(getLanguageCookie())
 
   const handleLanguageChange = (code: string) => {
-    setSelectedLanguage(i18n.language)
     i18next.changeLanguage(code)
+    setSelectedLanguage(code)
   }
 
   return (

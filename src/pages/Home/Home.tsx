@@ -49,7 +49,7 @@ const Home: React.FC = () => {
             <div className={styles.about}>
               <p className={styles.greetings}>{t('home_hiText')}</p>
               <p className={styles.bio}>
-                {t('home_startText')} <span>{t('home_stylistText')}</span>{' '}
+                {t('home_startText')} <span> {t('home_stylistText')} </span>{' '}
                 {t('home_andText')} <span>{t('home_fashionText')}</span>{' '}
                 {t('home_endText')}
               </p>

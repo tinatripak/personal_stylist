@@ -2,7 +2,6 @@
 
 .home {
   padding: 6rem 1.5rem 1.5rem 1.5rem;
-  font-family: $Josefin_Sans;
   font-weight: 200;
 
   @include breakpoint(burger) {
