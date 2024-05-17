@@ -34,7 +34,9 @@ const Products: React.FC = () => {
               <li>{t('products_presentationDesc2')}</li>
               <li>{t('products_presentationDesc3')}</li>
             </ul>
-            <button>{t('products_presentationButton')}</button>
+            <a href="/AccessoryTrends.pdf" download>
+              {t('products_presentationButton')}
+            </a>
           </div>
         </div>
         <GiftCard />
