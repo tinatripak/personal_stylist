@@ -12,12 +12,7 @@ const GiftCard: React.FC = () => {
   return (
     <div className={styles.giftCard}>
       <div className={styles.heading}>
-        <ScrollCarousel
-          autoplay
-          smartSpeed
-          speed={6}
-          className={styles.carousel}
-        >
+        <ScrollCarousel autoplay speed={1} className={styles.carousel}>
           {Array.from({ length: 7 }, (_, index) => (
             <div key={index} className={styles.card}>
               <p className={styles.name}>{t('giftcad_title')}</p>

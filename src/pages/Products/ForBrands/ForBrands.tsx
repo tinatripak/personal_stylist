@@ -12,12 +12,7 @@ const ForBrands: React.FC = () => {
   return (
     <div className={styles.forBrands}>
       <div className={styles.heading}>
-        <ScrollCarousel
-          autoplay
-          smartSpeed
-          speed={6}
-          className={styles.carousel}
-        >
+        <ScrollCarousel autoplay speed={1} className={styles.carousel}>
           {Array.from({ length: 7 }, (_, index) => (
             <div key={index} className={styles.brand}>
               <p className={styles.name}>{t('brands_title')}</p>
