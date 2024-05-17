@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .services {
-  padding: 8rem 0 1rem 0;
+  padding: 8.5rem 0 1rem 0;
 
   .heading {
     .carousel {
@@ -66,10 +66,7 @@
         font-weight: 100;
         line-height: 2rem;
       }
-      &:nth-child(2),
-      &:nth-child(4),
-      &:nth-child(5),
-      &:nth-child(7) {
+      &:nth-of-type(2n) {
         img {
           height: 20rem;
           object-fit: cover;
