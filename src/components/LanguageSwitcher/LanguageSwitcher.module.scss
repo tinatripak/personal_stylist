@@ -18,9 +18,9 @@
     &:hover {
       background: rgba($brown, 0.2);
     }
-    &:active {
-      background: linear-gradient(rgba($brown, 0.2), rgba($brown, 0.3));
-    }
+    // &:active {
+    //   background: linear-gradient(rgba($brown, 0.2), rgba($brown, 0.3));
+    // }
   }
 
   .dropdownContent {
