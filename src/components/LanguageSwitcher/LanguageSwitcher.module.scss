@@ -3,15 +3,17 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  order: 1;
 
   .dropbtn {
     cursor: pointer;
     outline: none;
-    padding: 0.75rem 1.25rem;
-    font-size: 2rem;
+    padding: 0.4rem 1.25rem;
+    font-size: 1.5rem;
     color: $brown;
     border: 1px solid transparent;
     transition: 0.3s ease all;
+    display: flex;
 
     &:hover {
       background: rgba($brown, 0.2);
