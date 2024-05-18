@@ -4,6 +4,7 @@
   position: relative;
   display: inline-block;
   order: 1;
+  background-color: $bg;
 
   .dropbtn {
     cursor: pointer;
@@ -14,6 +15,7 @@
     border: 1px solid transparent;
     transition: 0.3s ease all;
     display: flex;
+    background-color: $bg;
 
     &:hover {
       background: rgba($brown, 0.2);
