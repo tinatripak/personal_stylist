@@ -43,6 +43,9 @@
           width: 100%;
           min-height: 25rem;
         }
+        @include breakpoint(md) {
+          min-height: 23rem;
+        }
         @include breakpoint(sm) {
           min-height: 30rem;
         }
