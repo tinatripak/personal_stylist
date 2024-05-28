@@ -60,4 +60,9 @@ $headerHeight: 100px;
       @content;
     }
   }
+  @if $point == xxs {
+    @media (max-width: 25em) {
+      @content;
+    }
+  }
 }
