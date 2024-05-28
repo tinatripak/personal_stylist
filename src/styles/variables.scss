@@ -35,6 +35,11 @@ $headerHeight: 100px;
       @content;
     }
   }
+  @if $point == sliderlg {
+    @media (max-width: 54em) {
+      @content;
+    }
+  }
   @if $point == lg {
     @media (max-width: 61em) {
       @content;
