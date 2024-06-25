@@ -47,7 +47,7 @@
     .heading {
       font-family: $Ibarra_Real_Nova;
       font-weight: 500;
-      color: rgb(138, 5, 5);
+      color: $bordo;
       font-size: 3rem;
       text-transform: uppercase;
       width: max-content;
@@ -103,13 +103,13 @@
       border-top-right-radius: 15px 225px;
       border-bottom-right-radius: 225px 15px;
       border-bottom-left-radius: 15px 255px;
-      border: solid 2px rgb(138, 5, 5);
-      color: rgb(138, 5, 5);
+      border: solid 2px $bordo;
+      color: $bordo;
 
       &:hover {
         border: solid 2px rgb(255, 255, 255);
         color: rgb(255, 255, 255);
-        background-color: rgb(138, 5, 5);
+        background-color: $bordo;
       }
     }
   }

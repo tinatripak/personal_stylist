@@ -2,11 +2,12 @@
 
 .home {
   font-weight: 200;
-  padding: 0 7rem;
+  padding: 0 5rem;
 
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
     padding: 0 1.5rem;
   }
+
   .first_block {
     display: grid;
     align-items: center;
@@ -63,7 +64,7 @@
           min-height: 50px;
         }
         @include breakpoint(sm) {
-          min-height: 96px;
+          min-height: 70px;
         }
       }
       .service_button {
@@ -100,6 +101,8 @@
       img {
         width: 40vw;
         float: right;
+        object-fit: cover;
+        height: calc(100vh - 200px);
 
         @include breakpoint(burger) {
           width: 30rem;
@@ -107,16 +110,21 @@
 
         @include breakpoint(lg) {
           float: none;
-          width: 60%;
           display: flex;
           margin: 0 auto;
+          height: 35rem;
+          width: 70vw;
         }
         @include breakpoint(md) {
-          width: 90%;
+          height: 30rem;
         }
         @include breakpoint(sm) {
-          width: 95%;
           margin-top: 2rem;
+          height: 25rem;
+        }
+        @include breakpoint(xs) {
+          margin-top: 2rem;
+          height: 23rem;
         }
       }
     }
@@ -128,27 +136,39 @@
     gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
     min-height: calc(100vh - 100px);
+
     @include breakpoint(lg) {
       display: flex;
       flex-direction: column;
       margin-top: 7rem;
     }
+
     @include breakpoint(sm) {
       margin-top: 4rem;
     }
+
     .second_image {
       @include breakpoint(lg) {
         order: 2;
       }
       img {
-        width: 37rem;
+        width: 35rem;
+        object-fit: cover;
+        height: calc(100vh - 150px);
+
+        @include breakpoint(xl) {
+          width: 25rem;
+          height: calc(100vh - 300px);
+        }
+
         @include breakpoint(lg) {
-          width: 80%;
+          width: 35rem;
           margin: 0 auto;
           display: flex;
         }
         @include breakpoint(sm) {
-          width: 95%;
+          width: 100%;
+          height: calc(100vh - 300px);
         }
       }
     }
@@ -161,27 +181,27 @@
         font-weight: 400;
         text-transform: uppercase;
         margin-bottom: 1.5rem;
+        @include breakpoint(xl) {
+          font-size: 30px;
+        }
       }
       .bio {
         font-size: 24px;
         margin-bottom: 2.5rem;
         line-height: 2.5rem;
+        @include breakpoint(xl) {
+          font-size: 18px;
+          line-height: 2rem;
+        }
 
         span {
           font-size: 25px;
           text-transform: uppercase;
           font-weight: 400;
+          @include breakpoint(xl) {
+            font-size: 22px;
+          }
         }
-      }
-      .mission_heading {
-        font-size: 36px;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-      }
-      .mission {
-        font-size: 24px;
-        line-height: 2.5rem;
       }
     }
   }

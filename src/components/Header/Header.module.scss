@@ -12,7 +12,7 @@
   color: $brown;
 
   @include breakpoint(burger) {
-    padding: 2rem 7rem;
+    padding: 2rem 5rem;
   }
 
   .content {

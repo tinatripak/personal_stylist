@@ -30,7 +30,7 @@
     .carouselInner {
       display: flex;
       transition: transform 0.5s ease;
-      @include breakpoint(md) {
+      @include breakpoint(sm) {
         display: block;
       }
       @include breakpoint(sm) {
@@ -41,7 +41,7 @@
   .review {
     min-width: calc(calc(100% - 4rem) / 3);
     margin: 0 10px;
-    border: 5px solid $yellow;
+    border: 5px solid $terracotta;
     border-radius: 20px;
     font-size: 1.2rem;
     padding: 2rem;
@@ -56,7 +56,7 @@
       display: block;
     }
     .review {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
   }
   .dots {
@@ -85,17 +85,17 @@
   .loadMore {
     display: none;
     cursor: pointer;
-    background-color: $yellow;
+    background-color: $terracotta;
     font-size: 1.2rem;
     padding: 1rem 2rem;
     color: #fff;
-    border: 1px solid $yellow;
+    border: 1px solid $terracotta;
     font-weight: 300;
     font-family: $Raleway;
     border-radius: 5px;
     &:hover {
       background-color: transparent;
-      color: $yellow;
+      color: $terracotta;
     }
     @include breakpoint(sm) {
       display: block;

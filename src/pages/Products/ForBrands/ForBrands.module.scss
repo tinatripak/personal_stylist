@@ -12,7 +12,7 @@
           font-weight: 300;
           white-space: nowrap;
           padding-right: 3rem;
-          color: rgb(162, 0, 0);
+          color: $bordo;
           @include breakpoint(sm) {
             font-size: 2.4rem;
           }
@@ -36,7 +36,7 @@
     line-height: 2rem;
     .heading {
       font-size: 1.8rem;
-      color: rgb(162, 0, 0);
+      color: $bordo;
       text-transform: uppercase;
       width: 60%;
       font-family: $Ibarra_Real_Nova;
@@ -129,13 +129,13 @@
       border-top-right-radius: 15px 225px;
       border-bottom-right-radius: 225px 15px;
       border-bottom-left-radius: 15px 255px;
-      border: solid 2px rgb(162, 0, 0);
-      color: rgb(162, 0, 0);
+      border: solid 2px $bordo;
+      color: $bordo;
 
       &:hover {
-        border: solid 2px rgb(162, 0, 0);
+        border: solid 2px $bordo;
         color: $white;
-        background: rgb(162, 0, 0);
+        background: $bordo;
       }
     }
   }
