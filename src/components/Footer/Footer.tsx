@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 import styles from './Footer.module.scss'
+import { Link } from 'react-router-dom'
 
 const Footer: React.FC = () => {
   const { t } = useTranslation()
@@ -25,7 +26,12 @@ const Footer: React.FC = () => {
           <p>{t('footer_email')}</p>
           <a href="mailto:collabs@lizabalizka.com">collabs@lizabalizka.com</a>
         </div>
-        <p className={styles.name}>{t('footer_name')}</p>
+        <div>
+          <p className={styles.name}>{t('footer_name')}</p>
+          <Link className={styles.refundPolicy} to="/refundPolicy">
+            {t('refundPolicy_title')}
+          </Link>
+        </div>
       </div>
     </footer>
   )

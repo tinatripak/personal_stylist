@@ -4,16 +4,12 @@
   "home_title": "Personal Stylist",
   "home_subtitle": "Be yourself and let your style speak uniquely for you!",
   "home_button": "My services",
-  "home_hiText": "HEY Sweatheart,",
+  "home_hiText": "HEY,",
   "home_startText": "I am a",
-  "home_stylistText": "personal stylist",
-  "home_andText": "and",
-  "home_fashionText": "fashion influencer",
-  "home_endText": "Liza and I aim to assist you in discovering and articulating your distinct style",
-  "home_missionWord": "My mission",
-  "home_desireWord": "My desire",
-  "home_purposeWord": "My purpose",
-  "home_missionText": "It&apos;s about bringing you more joy by allowing your inneressence to shine through your outward expression, particularly via your exquisite selection of clothing styles.",
+  "home_stylistText": "certified personal stylist",
+  "home_endText": "Lisa Balytska and I will be happy to create the perfect looks for you, both for an important day and for every day.",
+  "home_firstDesc": "I believe that everyone has their own personal style and I will be happy to help you discover your style DNA.",
+  "home_secondDesc": "I have a wide range of services, you can find them by going to 'My services' in the menu, and I will be happy to consult in the direct and help you choose a service that will meet your style needs 100%.",
 
   "header_about": "About Me",
   "header_values": "My values",
@@ -31,8 +27,6 @@
   "services_oldprice": "Old Price",
 
   "reviews_title": "Precious Reviews",
-  "reviews_quote": "Don't be into trends. Don't make fashion own you, but you decide what you are, what you want to express by the way you dress and the way to live.",
-  "reviews_quotePerson": " Gianni Versace",
 
   "products_title": "My Products",
   "products_presentationName": "Actual accessories in 2024 (UK)",
@@ -42,8 +36,8 @@
   "products_presentationButton": "Download",
 
   "giftcad_title": "Gift Card",
-  "giftcad_desc": "You can purchase this service as a gift",
-  "giftcad_rule": "All you need to do is contact me in a format that is convenient for you, so that together we can choose the service that will be most effective in your case.",
+  "giftcad_desc": "You can purchase any service as a gift",
+  "giftcad_rule": "All you need to do is contact me in a format convenient for you, so that together we can choose the service that will be most effective in your case. The certificate is included in the price of any service, there is no separate fee for it.",
   "giftcad_giftCardButton": "Contact Me",
 
   "brands_title": "For Brands",
@@ -58,6 +52,20 @@
   "brands_integrationRule3": "unpacking",
   "brands_integrationAdd": "I am also considering other formats of cooperation",
   "brands_integrationButton": "Contact Me",
+
+  "refundPolicy_title": "Purchase And Refund Policy",
+  "refundPolicy_subscription": "Services are provided on a 100% prepaid basis to my individual account.",
+  "refundPolicy_payment_title": "Ability to pay for goods",
+  "refundPolicy_payment_paypal": "Payment for services from abroad is possible on PayPal",
+  "refundPolicy_payment_cash": "Payment in Ukraine is possible to my individual account in UAH at the exchange rate or to a PayPal account in foreign currency",
+  "refundPolicy_giftcard_title": "Possibility to receive gift certificates",
+  "refundPolicy_giftcard_delivery": "Gift certificates are available for any service, the certificates are available in electronic and laminated format, the first one is sent by e-mail and the second one by new mail in Ukraine and Poland.",
+  "refundPolicy_conditions_title": "Terms of return of goods",
+  "refundPolicy_firstCondition": "If the stylist does not perform the work, the amount is returned to the client;",
+  "refundPolicy_secondCondition": "In case of impossibility of performing the work through the client (not filling out the questionnaire, ignoring messages from the stylist), the subscription is not refundable;",
+  "refundPolicy_thirdCondition": "If the client does not have time to fill out the questionnaire on time (3-4 days before the booked date), it is possible to reschedule the date to another convenient date.",
+
+  "load_more": "Load more",
 
   "footer_name": "Liza Balizka",
   "footer_title": "Get in touch",

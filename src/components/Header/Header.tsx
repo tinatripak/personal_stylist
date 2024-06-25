@@ -140,7 +140,7 @@ const Header: React.FC = () => {
                   {t('header_products')}
                 </Link>
               </li>
-              <li
+              {/* <li
                 className={
                   location.pathname === '/reviews' ? classes.active : ''
                 }
@@ -156,7 +156,7 @@ const Header: React.FC = () => {
                 >
                   {t('header_reviews')}
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className={classes.menuLanguage}>

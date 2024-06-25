@@ -1,13 +1,11 @@
 @import '../../styles/variables.scss';
 
-.reviews {
-  padding: 8rem 1.5rem 10rem 1.5rem;
-  font-weight: 200;
-  min-height: 100vh;
-  margin-bottom: 2rem;
-  @include breakpoint(md) {
-    padding: 8rem 1.5rem 14rem 1.5rem;
-  }
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 5rem auto 7rem auto;
 
   .heading {
     text-align: center;
@@ -17,63 +15,90 @@
     font-family: $Ibarra_Real_Nova;
     margin-bottom: 6rem;
     color: $brown;
+
     @include breakpoint(sm) {
       font-size: 2.4rem;
       margin-bottom: 3rem;
     }
   }
-  .carousel {
-    .slide {
-      display: flex !important;
-      justify-content: center;
-      .review {
-        background-color: $bg;
-        border: 5px solid $yellow;
-        border-radius: 20px;
-        max-width: 95%;
-        min-height: 25rem;
-        font-size: 1.2rem;
-        padding: 2rem 2rem;
 
-        @include breakpoint(lg) {
-          width: 23rem;
-          min-height: 30rem;
-        }
-        @include breakpoint(sliderlg) {
-          width: 100%;
-          min-height: 25rem;
-        }
-        @include breakpoint(md) {
-          min-height: 23rem;
-        }
-        @include breakpoint(sm) {
-          min-height: 30rem;
-        }
-        @include breakpoint(xs) {
-          min-height: 25rem;
-        }
-        @include breakpoint(xxs) {
-          min-height: 30rem;
-        }
-        .name {
-          font-weight: 400;
-          font-size: 1.5rem;
-          margin-bottom: 2rem;
-        }
-        .text {
-          font-size: 1.1rem;
-        }
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+    .carouselInner {
+      display: flex;
+      transition: transform 0.5s ease;
+      @include breakpoint(md) {
+        display: block;
+      }
+      @include breakpoint(sm) {
+        display: none;
       }
     }
   }
-  .quote {
-    width: 40%;
+  .review {
+    min-width: calc(calc(100% - 4rem) / 3);
+    margin: 0 10px;
+    border: 5px solid $yellow;
+    border-radius: 20px;
     font-size: 1.2rem;
-    text-align: end;
-    float: right;
-    margin-top: 2rem;
-    @include breakpoint(lg) {
-      width: 80%;
+    padding: 2rem;
+
+    @include breakpoint(xl) {
+      min-width: calc(calc(100% - 2.5rem) / 2);
+    }
+  }
+  .smallCarousel {
+    display: none;
+    @include breakpoint(sm) {
+      display: block;
+    }
+    .review {
+      margin-bottom: 2rem;
+    }
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    @include breakpoint(sm) {
+      display: none;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+
+      &.active {
+        background-color: #717171;
+      }
+    }
+  }
+  .loadMore {
+    display: none;
+    cursor: pointer;
+    background-color: $yellow;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    border: 1px solid $yellow;
+    font-weight: 300;
+    font-family: $Raleway;
+    border-radius: 5px;
+    &:hover {
+      background-color: transparent;
+      color: $yellow;
+    }
+    @include breakpoint(sm) {
+      display: block;
     }
   }
 }

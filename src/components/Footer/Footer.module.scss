@@ -43,6 +43,12 @@
       display: block;
       font-size: 1rem;
     }
+    a {
+      &.refundPolicy {
+        font-size: 1rem;
+        text-transform: capitalize;
+      }
+    }
 
     .icons {
       display: flex;

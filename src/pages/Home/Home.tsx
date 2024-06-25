@@ -5,6 +5,7 @@ import styles from './Home.module.scss'
 import Typewriter from 'typewriter-effect'
 import { ReactTyped } from 'react-typed'
 import { useTranslation } from 'react-i18next'
+import Reviews from '../Reviews/Reviews'
 
 const Home: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState(false)
@@ -50,25 +51,13 @@ const Home: React.FC = () => {
               <p className={styles.greetings}>{t('home_hiText')}</p>
               <p className={styles.bio}>
                 {t('home_startText')} <span> {t('home_stylistText')} </span>{' '}
-                {t('home_andText')} <span>{t('home_fashionText')}</span>{' '}
                 {t('home_endText')}
               </p>
-              <p className={styles.mission_heading}>
-                <ReactTyped
-                  strings={[
-                    `${t('home_missionWord')}`,
-                    `${t('home_desireWord')}`,
-                    `${t('home_purposeWord')}`,
-                  ]}
-                  typeSpeed={100}
-                  loop
-                  backSpeed={20}
-                  showCursor={true}
-                />
-              </p>
-              <p className={styles.mission}>{t('home_missionText')}</p>
+              <p className={styles.bio}>{t('home_firstDesc')}</p>
+              <p className={styles.bio}>{t('home_secondDesc')}</p>
             </div>
           </div>
+          <Reviews />
         </div>
       </Layout>
     </div>

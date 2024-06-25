@@ -1,11 +1,11 @@
 @import '../../styles/variables.scss';
 
 .home {
-  padding: 6rem 1.5rem 1.5rem 1.5rem;
   font-weight: 200;
+  padding: 0 7rem;
 
-  @include breakpoint(burger) {
-    padding: 6rem 7rem 1.5rem 7rem;
+  @include breakpoint(lg) {
+    padding: 0 1.5rem;
   }
   .first_block {
     display: grid;

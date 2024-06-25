@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+
+.refundPolicy {
+  padding: 0 7rem;
+  min-height: 100vh;
+
+  @include breakpoint(lg) {
+    padding: 0 1.5rem;
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $Ibarra_Real_Nova;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: $brown;
+
+    @include breakpoint(sm) {
+      font-size: 2.4rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .headingList,
+  .subscription {
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+
+    @include breakpoint(sm) {
+      font-size: 1.2rem;
+    }
+  }
+  .subscription {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+  }
+  .headingList {
+    font-size: 1.3rem;
+  }
+  .liText {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    font-weight: 300;
+    @include breakpoint(sm) {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}

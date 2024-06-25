@@ -9,6 +9,7 @@ const Services = lazy(() => import('./pages/Services/Services'))
 const Service = lazy(() => import('./pages/Services/Service/Service'))
 const Reviews = lazy(() => import('./pages/Reviews/Reviews'))
 const Products = lazy(() => import('./pages/Products/Products'))
+const RefundPolicy = lazy(() => import('./pages/RefundPolicy/RefundPolicy'))
 
 const App: React.FC = () => (
   <Router>
@@ -18,8 +19,9 @@ const App: React.FC = () => (
         <Route path="values" element={<Values />} />
         <Route path="services" element={<Services />} />
         <Route path="service/:id" element={<Service />} />
-        <Route path="reviews" element={<Reviews />} />
+        {/* <Route path="reviews" element={<Reviews />} /> */}
         <Route path="products" element={<Products />} />
+        <Route path="refundPolicy" element={<RefundPolicy />} />
       </Routes>
     </Suspense>
   </Router>

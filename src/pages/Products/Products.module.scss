@@ -1,20 +1,20 @@
 @import '../../styles/variables.scss';
 
 .product {
-  padding: 9rem 7rem 5rem 7rem;
   display: flex;
   justify-content: space-around;
   gap: 5rem;
   min-height: 100vh;
+  padding: 0 7rem;
+
+  @include breakpoint(lg) {
+    padding: 0 1.5rem;
+  }
   @include breakpoint(xl) {
     gap: 3rem;
   }
-  @include breakpoint(lg) {
-    padding: 12rem 1.5rem 7rem 1.5rem;
-  }
   @include breakpoint(md) {
     display: block;
-    padding: 7rem 1.5rem 5rem 1.5rem;
   }
   .image {
     img {
