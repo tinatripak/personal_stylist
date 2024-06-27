@@ -2,19 +2,19 @@
 
 .values {
   font-weight: 200;
-  background-image: url('../../../public/images/values.jpg');
+  background-image: url('../../../public/images/values5.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0 7rem;
-  height: calc(100vh - 110px);
+  padding: 3rem 7rem;
+  min-height: calc(100vh - 110px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  @include breakpoint(lg) {
-    padding: 0 1.5rem;
+  @include breakpoint(xl) {
+    padding: 3rem 1.5rem;
   }
 
   .heading {
@@ -24,10 +24,10 @@
     font-weight: 600;
     font-family: $Ibarra_Real_Nova;
     margin-bottom: 6rem;
-    color: $bg;
+    // color: $bg;
 
     @include breakpoint(sm) {
-      font-size: 2.4rem;
+      font-size: 2.3rem;
       margin-bottom: 3rem;
     }
   }
@@ -44,6 +44,11 @@
       min-height: 15rem;
       font-size: 1.2rem;
       padding: 2rem 2rem;
+
+      @include breakpoint(sm) {
+        width: 100%;
+      }
+
       .id {
         font-weight: 400;
         font-size: 2.5rem;

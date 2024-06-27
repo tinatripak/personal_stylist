@@ -91,23 +91,6 @@ const Header: React.FC = () => {
               </li>
               <li
                 className={
-                  location.pathname === '/values' ? classes.active : ''
-                }
-              >
-                <Link
-                  to="/values"
-                  onClick={() => {
-                    menuToggleHandler()
-                    if (location.pathname === '/values') {
-                      setMenuOpen(false)
-                    }
-                  }}
-                >
-                  {t('header_values')}
-                </Link>
-              </li>
-              <li
-                className={
                   location.pathname === '/services' ? classes.active : ''
                 }
               >
@@ -121,6 +104,23 @@ const Header: React.FC = () => {
                   }}
                 >
                   {t('header_services')}
+                </Link>
+              </li>
+              <li
+                className={
+                  location.pathname === '/values' ? classes.active : ''
+                }
+              >
+                <Link
+                  to="/values"
+                  onClick={() => {
+                    menuToggleHandler()
+                    if (location.pathname === '/values') {
+                      setMenuOpen(false)
+                    }
+                  }}
+                >
+                  {t('header_values')}
                 </Link>
               </li>
               <li
@@ -140,23 +140,6 @@ const Header: React.FC = () => {
                   {t('header_products')}
                 </Link>
               </li>
-              {/* <li
-                className={
-                  location.pathname === '/reviews' ? classes.active : ''
-                }
-              >
-                <Link
-                  to="/reviews"
-                  onClick={() => {
-                    menuToggleHandler()
-                    if (location.pathname === '/reviews') {
-                      setMenuOpen(false)
-                    }
-                  }}
-                >
-                  {t('header_reviews')}
-                </Link>
-              </li> */}
             </ul>
           </nav>
           <div className={classes.menuLanguage}>
