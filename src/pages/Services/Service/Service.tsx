@@ -36,7 +36,7 @@ const Service: React.FC = () => {
           <div className={styles.image}>
             <LazyLoadImage
               src={serviceItem.photoUrl}
-              alt={serviceItem.name}
+              alt={`Liza Balizka, ${serviceItem.name}`}
               effect="blur"
               onLoad={handleImageLoad}
               fetchPriority="high"

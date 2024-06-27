@@ -22,7 +22,7 @@ const Products: React.FC = () => {
           <div className={styles.image}>
             <img
               src="/images/products.jpg"
-              alt="Liza Balizka"
+              alt="Liza Balizka, Certified Personal Stylist, Products"
               onLoad={handleImageLoad}
             />
           </div>

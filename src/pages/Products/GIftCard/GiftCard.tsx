@@ -29,7 +29,7 @@ const GiftCard: React.FC = () => {
         <div className={styles.cardImage}>
           <LazyLoadImage
             src="images/giftcertificate.png"
-            alt=""
+            alt={`Liza Balizka, Gift Card`}
             effect="blur"
           />
         </div>

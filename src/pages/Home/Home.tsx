@@ -38,14 +38,17 @@ const Home: React.FC = () => {
             <div className={styles.first_image}>
               <img
                 src="/images/secondMain.jpg"
-                alt="Liza Balizka"
+                alt="Liza Balizka, Certified Personal Stylist"
                 onLoad={handleImageLoad}
               />
             </div>
           </div>
           <div className={styles.second_block}>
             <div className={styles.second_image}>
-              <img src="/images/firstMain.jpg" alt="Liza Balizka" />
+              <img
+                src="/images/firstMain.jpg"
+                alt="Liza Balizka, Certified Personal Stylist"
+              />
             </div>
             <div className={styles.about}>
               <p className={styles.greetings}>{t('home_hiText')}</p>
