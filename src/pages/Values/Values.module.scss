@@ -2,7 +2,7 @@
 
 .values {
   font-weight: 200;
-  background-image: url('../../../public/images/values5.JPG');
+  background-image: url('../../../public/images/values.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,7 +24,7 @@
     font-weight: 600;
     font-family: $Ibarra_Real_Nova;
     margin-bottom: 6rem;
-    // color: $bg;
+    color: $bg;
 
     @include breakpoint(sm) {
       font-size: 2.3rem;
