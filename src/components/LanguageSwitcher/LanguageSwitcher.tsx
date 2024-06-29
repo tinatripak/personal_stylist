@@ -34,28 +34,36 @@ const LanguageSwitcher: React.FC = () => {
 
   const [selectedLanguage, setSelectedLanguage] =
     useState<string>(getLanguageCookie())
+  const [dropdownVisible, setDropdownVisible] = useState<boolean>(false)
 
   const handleLanguageChange = (code: string) => {
     i18next.changeLanguage(code)
     setSelectedLanguage(code)
+    setDropdownVisible(false)
+  }
+
+  const toggleDropdown = () => {
+    setDropdownVisible((prev) => !prev)
   }
 
   return (
     <div className={styles.dropdown}>
-      <button className={styles.dropbtn}>
+      <button className={styles.dropbtn} onClick={toggleDropdown}>
         <PiGlobeHemisphereEastLight />
       </button>
-      <ul className={styles.dropdownContent}>
-        {languages.map(({ code, name, country_code }) => (
-          <li
-            key={country_code}
-            value={country_code}
-            className={selectedLanguage === code ? styles.selected : ''}
-          >
-            <a onClick={() => handleLanguageChange(code)}>{name}</a>
-          </li>
-        ))}
-      </ul>
+      {dropdownVisible && (
+        <ul className={styles.dropdownContent}>
+          {languages.map(({ code, name, country_code }) => (
+            <li
+              key={country_code}
+              value={country_code}
+              className={selectedLanguage === code ? styles.selected : ''}
+            >
+              <a onClick={() => handleLanguageChange(code)}>{name}</a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   )
 }
