@@ -15,7 +15,8 @@ i18next
   .use(initReactI18next)
   .init({
     supportedLngs: ['en', 'ua'],
-    fallbackLng: 'ua',
+    fallbackLng: 'en',
+    lng: 'ua',
     debug: false,
     detection: {
       order: ['path', 'cookie', 'htmlTag'],
