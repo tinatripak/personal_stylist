@@ -101,13 +101,15 @@
         margin-bottom: 2rem;
       }
       img {
-        width: 40vw;
-        float: right;
-        object-fit: cover;
+        width: 30rem;
         height: calc(100vh - 200px);
 
-        @include breakpoint(burger) {
-          width: 30rem;
+        float: right;
+        object-fit: cover;
+
+        @include breakpoint(xl) {
+          height: 35rem;
+          width: 25rem;
         }
 
         @include breakpoint(lg) {
@@ -118,16 +120,18 @@
           width: 70vw;
         }
         @include breakpoint(md) {
-          height: 30rem;
+          width: 30rem;
           height: 40rem;
         }
         @include breakpoint(sm) {
           margin-top: 2rem;
-          height: 25rem;
+          height: 28rem;
+          width: 28rem;
         }
         @include breakpoint(xs) {
           margin-top: 2rem;
           height: 23rem;
+          width: 90vw;
         }
       }
     }
