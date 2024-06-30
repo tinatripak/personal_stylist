@@ -37,7 +37,7 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.first_image}>
               <img
-                src="/images/main-first.jpg"
+                src="/images/main-first-shorter.jpeg"
                 alt="Liza Balizka, Certified Personal Stylist"
                 onLoad={handleImageLoad}
               />
