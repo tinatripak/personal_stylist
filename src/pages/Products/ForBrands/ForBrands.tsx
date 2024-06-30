@@ -15,7 +15,7 @@ const ForBrands: React.FC = () => {
         <ScrollCarousel autoplay speed={1} className={styles.carousel}>
           {Array.from({ length: 7 }, (_, index) => (
             <div key={index} className={styles.brand}>
-              <h1 className={styles.name}>{t('brands_title')}</h1>
+              <p className={styles.name}>{t('brands_title')}</p>
             </div>
           ))}
         </ScrollCarousel>
@@ -29,7 +29,7 @@ const ForBrands: React.FC = () => {
             className={styles.lazyImage}
           />
           <div>
-            <h2 className={styles.heading}>{t('brands_lectionTitle')}</h2>
+            <p className={styles.heading}>{t('brands_lectionTitle')}</p>
             <ul>
               <li>{t('brands_lectionRule')}</li>
             </ul>
@@ -42,7 +42,7 @@ const ForBrands: React.FC = () => {
         </div>
         <div className={styles.integrations}>
           <div>
-            <h2 className={styles.heading}>{t('brands_integrationTitle')}</h2>
+            <p className={styles.heading}>{t('brands_integrationTitle')}</p>
             <ul>
               <li>{t('brands_integrationRule1')}</li>
               <li>{t('brands_integrationRule2')}</li>

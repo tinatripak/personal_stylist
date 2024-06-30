@@ -32,7 +32,7 @@ const Services: React.FC = () => {
             >
               {Array.from({ length: 7 }, (_, index) => (
                 <div key={index} className={styles.service}>
-                  <h1 className={styles.name}>{t('services_title')}</h1>
+                  <p className={styles.name}>{t('services_title')}</p>
                 </div>
               ))}
             </ScrollCarousel>
@@ -51,9 +51,9 @@ const Services: React.FC = () => {
                   effect="blur"
                   onLoad={handleImageLoad}
                 />
-                <h2 className={styles.name}>
+                <p className={styles.name}>
                   {i18n.language == 'en' ? service.name : service.nameUkr}
-                </h2>
+                </p>
                 <p className={styles.description}>
                   {i18n.language == 'en'
                     ? service.description

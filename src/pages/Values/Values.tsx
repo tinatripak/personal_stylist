@@ -16,9 +16,9 @@ const Values: React.FC = () => {
           {valuelist.map((value) => (
             <div key={value.id} className={styles.value}>
               <p className={styles.id}>{value.id}</p>
-              <h2 className={styles.text}>
+              <p className={styles.text}>
                 {i18n.language == 'en' ? value.valueText : value.valueTextUkr}
-              </h2>
+              </p>
             </div>
           ))}
         </div>

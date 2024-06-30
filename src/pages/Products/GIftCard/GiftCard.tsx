@@ -15,7 +15,7 @@ const GiftCard: React.FC = () => {
         <ScrollCarousel autoplay speed={1} className={styles.carousel}>
           {Array.from({ length: 7 }, (_, index) => (
             <div key={index} className={styles.card}>
-              <h1 className={styles.name}>{t('giftcad_title')}</h1>
+              <p className={styles.name}>{t('giftcad_title')}</p>
             </div>
           ))}
         </ScrollCarousel>
