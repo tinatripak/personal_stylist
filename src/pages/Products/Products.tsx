@@ -27,8 +27,8 @@ const Products: React.FC = () => {
             />
           </div>
           <div className={styles.presentation}>
-            <p className={styles.heading}>{t('products_title')}</p>
-            <p className={styles.title}>{t('products_presentationName')}</p>
+            <h1 className={styles.heading}>{t('products_title')}</h1>
+            <h2 className={styles.title}>{t('products_presentationName')}</h2>
             <ul>
               <li>{t('products_presentationDesc1')}</li>
               <li>{t('products_presentationDesc2')}</li>

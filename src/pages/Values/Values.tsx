@@ -11,14 +11,14 @@ const Values: React.FC = () => {
   return (
     <Layout>
       <div className={styles.values}>
-        <p className={styles.heading}>{t('values_title')}</p>
+        <h1 className={styles.heading}>{t('values_title')}</h1>
         <div className={styles.valuelist}>
           {valuelist.map((value) => (
             <div key={value.id} className={styles.value}>
               <p className={styles.id}>{value.id}</p>
-              <p className={styles.text}>
+              <h2 className={styles.text}>
                 {i18n.language == 'en' ? value.valueText : value.valueTextUkr}
-              </p>
+              </h2>
             </div>
           ))}
         </div>

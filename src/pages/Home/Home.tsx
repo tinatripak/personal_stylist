@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         <div className={styles.home}>
           <div className={styles.first_block}>
             <div className={styles.main}>
-              <p className={styles.heading}>{t('home_title')}</p>
+              <h1 className={styles.heading}>{t('home_title')}</h1>
               <div className={styles.subheading}>
                 <Typewriter
                   options={{

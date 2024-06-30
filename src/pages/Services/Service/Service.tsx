@@ -43,9 +43,9 @@ const Service: React.FC = () => {
             />
           </div>
           <div className={styles.descItem}>
-            <p className={styles.name}>
+            <h1 className={styles.name}>
               {i18n.language == 'en' ? serviceItem.name : serviceItem.nameUkr}
-            </p>
+            </h1>
             <p className={styles.description}>
               {i18n.language == 'en'
                 ? serviceItem.description
