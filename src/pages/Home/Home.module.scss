@@ -2,10 +2,10 @@
 
 .home {
   font-weight: 200;
-  padding: 0 5rem;
+  padding: 0 1.5rem;
 
-  @include breakpoint(md) {
-    padding: 0 1.5rem;
+  @include breakpoint(burger) {
+    padding: 0 5rem;
   }
 
   .first_block {
@@ -13,6 +13,8 @@
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     min-height: calc(100vh - 100px);
+    gap: 2rem;
+
     @include breakpoint(lg) {
       display: flex;
       flex-direction: column;
@@ -117,6 +119,7 @@
         }
         @include breakpoint(md) {
           height: 30rem;
+          height: 40rem;
         }
         @include breakpoint(sm) {
           margin-top: 2rem;
