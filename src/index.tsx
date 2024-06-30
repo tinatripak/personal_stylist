@@ -28,8 +28,8 @@ i18next
   })
 
 root.render(
-  <React.StrictMode>
+  <>
     <Analytics />
     <App />
-  </React.StrictMode>
+  </>
 )
