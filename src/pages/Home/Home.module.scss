@@ -106,7 +106,6 @@
 
         float: right;
         object-fit: cover;
-        object-position: top;
 
         @include breakpoint(xl) {
           height: 35rem;
@@ -164,6 +163,7 @@
         width: 35rem;
         object-fit: cover;
         height: calc(100vh - 150px);
+        object-position: top;
 
         @include breakpoint(xl) {
           width: 25rem;
