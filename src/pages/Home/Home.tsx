@@ -37,7 +37,7 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.first_image}>
               <img
-                src="/images/secondMain.jpg"
+                src="/images/mainfirst.jpg"
                 alt="Liza Balizka, Certified Personal Stylist"
                 onLoad={handleImageLoad}
               />
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
           <div className={styles.second_block}>
             <div className={styles.second_image}>
               <img
-                src="/images/firstMain.jpg"
+                src="/images/mainsecond.jpg"
                 alt="Liza Balizka, Certified Personal Stylist"
               />
             </div>
