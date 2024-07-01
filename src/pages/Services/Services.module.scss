@@ -49,7 +49,7 @@
 
         @include breakpoint(sm) {
           width: 17rem;
-          height: 17rem;
+          height: 17rem !important;
         }
       }
       .name {
