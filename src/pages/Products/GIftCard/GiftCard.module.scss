@@ -73,8 +73,8 @@
         border: solid 2px $white;
         color: $white;
         &:hover {
-          border: solid 2px rgb(162, 0, 0);
-          color: rgb(162, 0, 0);
+          border: solid 2px $bordo;
+          color: $bordo;
           background: $white;
         }
       }

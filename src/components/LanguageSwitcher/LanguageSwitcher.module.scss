@@ -11,17 +11,17 @@
     outline: none;
     padding: 0.55rem 0.8rem;
     font-size: 1.5rem;
-    color: $brown;
+    color: $dark_brown;
     border: 1px solid transparent;
     transition: 0.3s ease all;
     display: flex;
     background-color: $bg;
 
     &:hover {
-      background: rgba($brown, 0.2);
+      background: rgba($dark_brown, 0.2);
     }
     // &:active {
-    //   background: linear-gradient(rgba($brown, 0.2), rgba($brown, 0.3));
+    //   background: linear-gradient(rgba($dark_brown, 0.2), rgba($dark_brown, 0.3));
     // }
   }
 
@@ -37,7 +37,7 @@
 
     li {
       &.selected {
-        background: rgba($brown, 0.5);
+        background: rgba($dark_brown, 0.5);
 
         a {
           color: $white;
@@ -50,7 +50,7 @@
         display: block;
 
         &:hover {
-          background-color: rgba($brown, 0.2);
+          background-color: rgba($dark_brown, 0.2);
         }
       }
     }

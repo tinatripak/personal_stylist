@@ -27,7 +27,7 @@
         font-size: 6vw;
         text-transform: uppercase;
         font-family: $Ibarra_Real_Nova;
-        color: $brown;
+        color: $dark_brown;
         font-weight: 700;
         width: 60%;
 
@@ -49,7 +49,7 @@
         }
       }
       .subheading {
-        color: $brown;
+        color: $dark_brown;
         font-size: 20px;
         width: 40%;
         margin: 1rem 0 3rem 0;
@@ -71,8 +71,8 @@
       }
       .service_button {
         color: $white;
-        background-color: $terracotta;
-        border: 1px solid $terracotta;
+        background-color: $bordo;
+        border: 1px solid $bordo;
         text-transform: uppercase;
         font-family: $Josefin_Sans;
         font-size: 24px;
@@ -89,8 +89,8 @@
         }
         &:hover {
           background-color: $white;
-          color: $terracotta;
-          border: 1px solid $terracotta;
+          color: $bordo;
+          border: 1px solid $bordo;
         }
       }
     }
@@ -137,7 +137,7 @@
     }
   }
   .second_block {
-    color: $brown;
+    color: $dark_brown;
     display: grid;
     align-items: center;
     gap: 4rem;

@@ -9,7 +9,7 @@
   background-color: $bg;
 
   z-index: 3;
-  color: $brown;
+  color: $dark_brown;
 
   @include breakpoint(burger) {
     padding: 2rem 5rem;
@@ -17,7 +17,7 @@
 
   .content {
     text-transform: uppercase;
-    color: $brown;
+    color: $dark_brown;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -26,12 +26,12 @@
     position: relative;
     z-index: 3000;
     font-weight: 100;
-    border-bottom: 1px solid $light_brown;
+    border-bottom: 1px solid $gray;
 
     .logo {
       font-size: 32px;
       text-decoration: none;
-      color: $brown;
+      color: $dark_brown;
       text-transform: uppercase;
       font-family: $Ibarra_Real_Nova;
     }
@@ -96,7 +96,7 @@
               font-weight: 300;
 
               &:hover {
-                background: rgba($brown, 0.1);
+                background: rgba($dark_brown, 0.1);
               }
               &:active {
                 background: linear-gradient(
@@ -134,7 +134,7 @@
           padding: 0 0.3rem;
 
           &:hover {
-            color: rgba($brown, 0.5);
+            color: rgba($dark_brown, 0.5);
           }
 
           @include breakpoint(burger) {

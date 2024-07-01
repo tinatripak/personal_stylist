@@ -2,7 +2,7 @@
 
 .values {
   font-weight: 200;
-  background-image: url('../../../public/images/values.JPEG');
+  background-image: url('../../../public/images/bgvalues.JPG');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,10 +36,10 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 5rem;
-    color: $brown;
+    color: $dark;
     .value {
       background-color: $bg;
-      border: 5px solid $terracotta;
+      border: 5px solid $bordo;
       width: 20rem;
       min-height: 15rem;
       font-size: 1.2rem;

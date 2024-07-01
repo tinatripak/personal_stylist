@@ -14,7 +14,7 @@
     font-weight: 600;
     font-family: $Ibarra_Real_Nova;
     margin-bottom: 6rem;
-    color: $brown;
+    color: $dark_brown;
 
     @include breakpoint(sm) {
       font-size: 2.3rem;
@@ -41,7 +41,7 @@
   .review {
     min-width: calc(calc(100% - 4rem) / 3);
     margin: 0 10px;
-    border: 5px solid $terracotta;
+    border: 5px solid $bordo;
     border-radius: 20px;
     font-size: 1.2rem;
     padding: 2rem;
@@ -85,17 +85,17 @@
   .loadMore {
     display: none;
     cursor: pointer;
-    background-color: $terracotta;
+    background-color: $bordo;
     font-size: 1.2rem;
     padding: 1rem 2rem;
     color: #fff;
-    border: 1px solid $terracotta;
+    border: 1px solid $bordo;
     font-weight: 300;
     font-family: $Raleway;
     border-radius: 5px;
     &:hover {
       background-color: transparent;
-      color: $terracotta;
+      color: $bordo;
     }
     @include breakpoint(sm) {
       display: block;
