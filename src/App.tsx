@@ -1,5 +1,10 @@
 import React, { lazy, ReactNode, Suspense } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from 'react-router-dom'
 import Loader from './components/Loader/Loader'
 import useScrollToTop from './ScrollDown'
 
@@ -27,12 +32,13 @@ const App: React.FC = () => {
       <Suspense fallback={<Loader />}>
         <ScrollHandler>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route index path="/" element={<Home />} />
             <Route path="values" element={<Values />} />
             <Route path="services" element={<Services />} />
             <Route path="service/:id" element={<Service />} />
             <Route path="products" element={<Products />} />
             <Route path="refundPolicy" element={<RefundPolicy />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </ScrollHandler>
       </Suspense>
