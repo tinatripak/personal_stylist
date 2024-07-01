@@ -26,8 +26,8 @@ const Home: React.FC = () => {
                   options={{
                     strings: [`${t('home_subtitle')}`],
                     autoStart: true,
-                    loop: true,
-                    deleteSpeed: 0,
+                    loop: false,
+                    deleteSpeed: Infinity,
                   }}
                 />
               </div>
