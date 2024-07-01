@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 import ScrollCarousel from 'scroll-carousel-react'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 import { useTranslation } from 'react-i18next'
+import Loader from '../../../components/Loader/Loader'
 
 import styles from './GiftCard.module.scss'
-import Loader from '../../../components/Loader/Loader'
 
 const GiftCard: React.FC = () => {
   const { t } = useTranslation()

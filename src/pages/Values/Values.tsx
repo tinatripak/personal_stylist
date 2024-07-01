@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Layout from '../../components/Layout/Layout'
-import styles from './Values.module.scss'
 import { useTranslation } from 'react-i18next'
-
 import valuelist from './valuelist'
 import Loader from '../../components/Loader/Loader'
+
+import styles from './Values.module.scss'
 
 const Values: React.FC = () => {
   const { t, i18n } = useTranslation()

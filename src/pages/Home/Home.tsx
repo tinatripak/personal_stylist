@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import Layout from '../../components/Layout/Layout'
 import Loader from '../../components/Loader/Loader'
-import styles from './Home.module.scss'
 import Typewriter from 'typewriter-effect'
-import { ReactTyped } from 'react-typed'
 import { useTranslation } from 'react-i18next'
 import Reviews from '../Reviews/Reviews'
+
+import styles from './Home.module.scss'
 
 const Home: React.FC = () => {
   const [imageLoaded, setImageLoaded] = useState(false)

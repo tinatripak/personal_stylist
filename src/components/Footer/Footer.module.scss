@@ -3,18 +3,17 @@
 .footer {
   background-color: $dark_brown;
   color: $bg;
-  padding: 0 2rem;
-  line-height: 2.5rem;
+  padding: 2rem 2rem;
 
   a {
     text-decoration: none;
     color: $bg;
     font-weight: 100;
   }
+
   .heading {
     text-align: end;
-    padding-top: 3rem;
-    margin: 0 auto 3rem auto;
+    margin: 1rem 0;
     font-size: 5rem;
     text-transform: uppercase;
     font-family: $Ibarra_Real_Nova;
@@ -29,19 +28,16 @@
 
   .social_media {
     display: flex;
-    justify-content: space-around;
-    align-items: start;
-    gap: 5rem;
-    padding-bottom: 3rem;
+    justify-content: space-between;
     font-size: 1.2rem;
     text-transform: uppercase;
+    line-height: 2.5rem;
+
     @include breakpoint(lg) {
       font-size: 1rem;
-      gap: 3rem;
     }
     @include breakpoint(md) {
       display: block;
-      font-size: 1rem;
     }
     a {
       &.refundPolicy {
@@ -52,9 +48,8 @@
 
     .icons {
       display: flex;
-      justify-content: center;
-      align-items: center;
       gap: 5rem;
+
       @include breakpoint(lg) {
         gap: 1rem;
       }

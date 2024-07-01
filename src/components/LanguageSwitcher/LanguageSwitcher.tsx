@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import i18next from 'i18next'
 import { PiGlobeHemisphereEastLight } from 'react-icons/pi'
 import styles from './LanguageSwitcher.module.scss'
-import { useTranslation } from 'react-i18next'
 import Cookies from 'js-cookie'
 
 interface Language {
@@ -12,33 +11,38 @@ interface Language {
   dir: string
 }
 
-const LanguageSwitcher: React.FC = () => {
-  const languages: Language[] = [
-    {
-      code: 'ua',
-      name: 'Ukrainian',
-      country_code: 'ua',
-      dir: 'rtl',
-    },
-    {
-      code: 'en',
-      name: 'English',
-      country_code: 'gb',
-      dir: '',
-    },
-  ]
+const languages: Language[] = [
+  {
+    code: 'ua',
+    name: 'Ukrainian',
+    country_code: 'ua',
+    dir: 'rtl',
+  },
+  {
+    code: 'en',
+    name: 'English',
+    country_code: 'gb',
+    dir: '',
+  },
+]
 
-  const getLanguageCookie = () => {
-    return Cookies.get('i18next')
+const LanguageSwitcher: React.FC = () => {
+  const getLanguageCookie = (): string => {
+    return Cookies.get('i18next') || 'ua'
   }
 
   const [selectedLanguage, setSelectedLanguage] =
     useState<string>(getLanguageCookie())
   const [dropdownVisible, setDropdownVisible] = useState<boolean>(false)
 
+  useEffect(() => {
+    i18next.changeLanguage(selectedLanguage)
+  }, [selectedLanguage])
+
   const handleLanguageChange = (code: string) => {
     i18next.changeLanguage(code)
     setSelectedLanguage(code)
+    Cookies.set('i18next', code)
     setDropdownVisible(false)
   }
 
@@ -56,7 +60,6 @@ const LanguageSwitcher: React.FC = () => {
           {languages.map(({ code, name, country_code }) => (
             <li
               key={country_code}
-              value={country_code}
               className={selectedLanguage === code ? styles.selected : ''}
             >
               <a onClick={() => handleLanguageChange(code)}>{name}</a>

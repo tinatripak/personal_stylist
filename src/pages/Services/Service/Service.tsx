@@ -3,11 +3,11 @@ import servicelist from '../servicelist'
 import Loader from '../../../components/Loader/Loader'
 import Layout from '../../../components/Layout/Layout'
 import { useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
 import styles from './Service.module.scss'
-import { useTranslation } from 'react-i18next'
 
 const Service: React.FC = () => {
   const { id } = useParams<{ id: string }>()

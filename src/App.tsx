@@ -1,8 +1,9 @@
 import React, { lazy, ReactNode, Suspense } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Loader from './components/Loader/Loader'
-import './styles/index.scss'
 import useScrollToTop from './ScrollDown'
+
+import './styles/index.scss'
 
 const Home = lazy(() => import('./pages/Home/Home'))
 const Values = lazy(() => import('./pages/Values/Values'))

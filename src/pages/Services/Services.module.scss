@@ -6,6 +6,7 @@
       border-bottom: 4px solid $bordo;
       border-top: 4px solid $bordo;
       padding: 1rem 0;
+
       .service {
         .name {
           text-align: center;
@@ -29,7 +30,6 @@
     color: $dark_brown;
     display: flex;
     justify-content: center;
-    align-items: start;
     gap: 4rem;
     flex-wrap: wrap;
     .service {
@@ -46,10 +46,10 @@
         width: 20rem;
         height: 24rem;
         object-fit: cover;
+
         @include breakpoint(sm) {
           width: 17rem;
-          height: 17rem !important;
-          object-fit: cover;
+          height: 17rem;
         }
       }
       .name {
@@ -67,7 +67,6 @@
       &:nth-of-type(2n) {
         img {
           height: 20rem;
-          object-fit: cover;
         }
       }
     }

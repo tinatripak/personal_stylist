@@ -3,9 +3,8 @@ import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-
-import classes from './Header.module.scss'
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
+import styles from './Header.module.scss'
 
 interface Size {
   width: number | undefined
@@ -53,11 +52,11 @@ const Header: React.FC = () => {
   }
 
   return (
-    <header className={classes.header}>
-      <div className={classes.content}>
+    <header className={styles.header}>
+      <div className={styles.content}>
         <Link
           to="/"
-          className={classes.logo}
+          className={styles.logo}
           onClick={() => {
             menuToggleHandler()
             if (location.pathname === '/') {
@@ -67,16 +66,16 @@ const Header: React.FC = () => {
         >
           Liza Balizka
         </Link>
-        <div className={classes.menucontent}>
+        <div className={styles.menucontent}>
           <nav
-            className={`${classes.nav} ${
+            className={`${styles.nav} ${
               menuOpen && size.width && size.width < 1290
-                ? classes.isMenu
-                : classes.withoutMenu
+                ? styles.isMenu
+                : styles.withoutMenu
             }`}
           >
             <ul>
-              <li className={location.pathname === '/' ? classes.active : ''}>
+              <li className={location.pathname === '/' ? styles.active : ''}>
                 <Link
                   to="/"
                   onClick={() => {
@@ -91,7 +90,7 @@ const Header: React.FC = () => {
               </li>
               <li
                 className={
-                  location.pathname === '/services' ? classes.active : ''
+                  location.pathname === '/services' ? styles.active : ''
                 }
               >
                 <Link
@@ -107,9 +106,7 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li
-                className={
-                  location.pathname === '/values' ? classes.active : ''
-                }
+                className={location.pathname === '/values' ? styles.active : ''}
               >
                 <Link
                   to="/values"
@@ -125,7 +122,7 @@ const Header: React.FC = () => {
               </li>
               <li
                 className={
-                  location.pathname === '/products' ? classes.active : ''
+                  location.pathname === '/products' ? styles.active : ''
                 }
               >
                 <Link
@@ -142,14 +139,14 @@ const Header: React.FC = () => {
               </li>
             </ul>
           </nav>
-          <div className={classes.menuLanguage}>
-            <div className={classes.toggle}>
+          <div className={styles.menuLanguage}>
+            <div className={styles.toggle}>
               {!menuOpen ? (
                 <BiMenuAltRight onClick={menuToggleHandler} />
               ) : (
                 <AiOutlineClose
                   onClick={menuToggleHandler}
-                  className={classes.close}
+                  className={styles.close}
                 />
               )}
             </div>

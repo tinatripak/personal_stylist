@@ -2,27 +2,18 @@
 
 .dropdown {
   position: relative;
-  display: inline-block;
-  order: 1;
-  background-color: $bg;
 
   .dropbtn {
     cursor: pointer;
-    outline: none;
     padding: 0.55rem 0.8rem;
     font-size: 1.5rem;
     color: $dark_brown;
     border: 1px solid transparent;
-    transition: 0.3s ease all;
     display: flex;
-    background-color: $bg;
 
     &:hover {
       background: rgba($dark_brown, 0.2);
     }
-    // &:active {
-    //   background: linear-gradient(rgba($dark_brown, 0.2), rgba($dark_brown, 0.3));
-    // }
   }
 
   .dropdownContent {
@@ -31,7 +22,6 @@
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
     list-style-type: none;
     right: 0;
 
@@ -44,7 +34,7 @@
         }
       }
       a {
-        color: black;
+        color: $black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;

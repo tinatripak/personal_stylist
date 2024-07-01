@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 import reviews from './reviewlist'
 import { CgQuote } from 'react-icons/cg'
 import { useTranslation } from 'react-i18next'
+
 import styles from './Reviews.module.scss'
 
 const Carousel = () => {

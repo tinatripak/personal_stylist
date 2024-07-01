@@ -1,7 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import styles from './RefundPolicy.module.scss'
 import Layout from '../../components/Layout/Layout'
+
+import styles from './RefundPolicy.module.scss'
 
 const RefundPolicy = () => {
   const { t } = useTranslation()
@@ -16,30 +17,26 @@ const RefundPolicy = () => {
         <h3 className={styles.headingList}>
           {t('refundPolicy_payment_title')}:
         </h3>
-        <p className={styles.liText}>
-          &#9675; {t('refundPolicy_payment_paypal')}
-        </p>
-        <p className={styles.liText}>
-          &#9675; {t('refundPolicy_payment_cash')}
-        </p>
+        <ul>
+          <li className={styles.liText}>{t('refundPolicy_payment_paypal')}</li>
+          <li className={styles.liText}>{t('refundPolicy_payment_cash')}</li>
+        </ul>
         <h3 className={styles.headingList}>
           {t('refundPolicy_giftcard_title')}:
         </h3>
-        <p className={styles.liText}>
-          &#9675; {t('refundPolicy_giftcard_delivery')}
-        </p>
+        <ul>
+          <li className={styles.liText}>
+            {t('refundPolicy_giftcard_delivery')}
+          </li>
+        </ul>
         <h3 className={styles.headingList}>
           {t('refundPolicy_conditions_title')}:
         </h3>
-        <p className={styles.liText}>
-          &#9675; {t('refundPolicy_firstCondition')}
-        </p>
-        <p className={styles.liText}>
-          &#9675; {t('refundPolicy_secondCondition')}
-        </p>
-        <p className={styles.liText}>
-          &#9675; {t('refundPolicy_thirdCondition')}
-        </p>
+        <ul>
+          <li className={styles.liText}>{t('refundPolicy_firstCondition')}</li>
+          <li className={styles.liText}>{t('refundPolicy_secondCondition')}</li>
+          <li className={styles.liText}>{t('refundPolicy_thirdCondition')}</li>
+        </ul>
       </div>
     </Layout>
   )

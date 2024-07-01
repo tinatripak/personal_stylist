@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   gap: 5rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 90px);
   padding: 0 7rem;
 
   @include breakpoint(lg) {
@@ -67,8 +67,6 @@
       text-transform: uppercase;
       font-size: 2rem;
       margin: 1.5rem 0;
-      width: 70%;
-
       width: fit-content;
 
       @include breakpoint(xl) {
@@ -98,11 +96,7 @@
       padding: 0.5rem 0.5rem;
       margin: 3rem 0.5rem 0rem 0.5rem;
       font-size: 1.5rem;
-
-      border-top-left-radius: 255px 15px;
-      border-top-right-radius: 15px 225px;
-      border-bottom-right-radius: 225px 15px;
-      border-bottom-left-radius: 15px 255px;
+      border-radius: 255px 225px 15px 15px / 15px 15px 225px 255px;
       border: solid 2px $bordo;
       color: $bordo;
 
