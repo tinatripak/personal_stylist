@@ -38,6 +38,7 @@ const App: React.FC = () => {
             <Route path="service/:id" element={<Service />} />
             <Route path="products" element={<Products />} />
             <Route path="refundPolicy" element={<RefundPolicy />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </ScrollHandler>
       </Suspense>
